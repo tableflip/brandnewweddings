@@ -1,0 +1,67 @@
+{
+  "name": "brandnewweddings",
+  "version": "1.0.0",
+  "description": "Website for brandnewweddings.co.uk",
+  "homepage": "https://github.com/tableflip/brandnewweddings#readme",
+  "author": "TABLEFLIP",
+  "license": "AGPL-3.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tableflip/brandnewweddings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tableflip/brandnewweddings/issues"
+  },
+  "config": {
+    "deploy": {
+      "next": "brandnewweddings.surge.oi",
+      "prod": "brandnewweddings.co.uk"
+    }
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "scripts": {
+    "test": "standard",
+    "start": "npm-run-all build watch",
+    "build": "npm-run-all svg --parallel build:*",
+    "watch": "npm-run-all --parallel watch:*",
+    "clean": "rm -rf ./dist/*;",
+    "svg": "svgshelf 'svg/*' pages/bundle.svg && svgo pages/bundle.svg",
+    "build:static": "rsync -a public/ dist",
+    "build:css": "node build/sass.js | postcss --local-plugins --use autoprefixer --output dist/bundle.css",
+    "build:html": "node build/jade.js",
+    "build:js": "browserify -t jadeify pages/main.js -o dist/bundle.js",
+    "watch:static": "nodemon -w public -e 'gif,png,webm,jpg' -x npm run build:static",
+    "watch:css": "nodemon -w facts.json -w pages -e scss -x npm run build:css",
+    "watch:html": "nodemon -w facts.json -w pages -e jade,json -x npm run build:html",
+    "watch:js": "watchify -t jadeify pages/main.js -o dist/bundle.js",
+    "watch:serve": "browser-sync start --files 'dist/bundle.*' --files 'dist/*.html' --server dist",
+    "deploy:next": "npm-run-all clean build && surge -p ./dist -d $npm_package_config_deploy_next",
+    "deploy:prod": "npm-run-all clean build && surge -p ./dist -d $npm_package_config_deploy_prod"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.0.3",
+    "bootstrap": "^4.0.0-alpha.2",
+    "browserify": "^11.2.0",
+    "find": "^0.2.4",
+    "jade": "^1.11.0",
+    "jadeify": "^4.6.0",
+    "jquery": "^2.2.1",
+    "markdown-it": "^6.0.0",
+    "npm-run-all": "^1.2.11",
+    "postcss": "^5.0.9",
+    "postcss-cli": "^2.5.1",
+    "postcss-import": "^7.1.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "node-sass": "^3.4.2",
+    "pre-commit": "^1.1.2",
+    "standard": "^6.0.7",
+    "svgo": "^0.6.2",
+    "svgshelf": "^1.0.3",
+    "watchify": "^3.7.0"
+  }
+}

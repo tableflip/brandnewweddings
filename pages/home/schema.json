@@ -1,0 +1,9 @@
+{
+  "exampleTextField": {
+    "type": "text",
+    "validation": {
+      "max": 65
+    }
+  },
+  "exampleTextareaField": { "type": "textarea" }
+}

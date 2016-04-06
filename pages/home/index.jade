@@ -1,0 +1,10 @@
+include ../icon.jade
+
+doctype html
+html(lang='en')
+  head
+    include ../head.jade
+    title=content.pageTitle
+  body.page-home
+    include ../bundle.svg
+    script(src='#{meta.relativePathToRoot}/bundle.js')
