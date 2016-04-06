@@ -12,6 +12,9 @@ $brand-primary: #7cc7c1 !default;
 $brand-accent: #b980b4;
 $brand-gray: #9d9d9c;
 $brand-gray-light: #dadada;
+$link-color: $brand-accent;
+$body-color: $brand-gray;
+$headings-color: $brand-primary;
 $enable-rounded: false;
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
@@ -58,11 +61,20 @@ body > svg {
   }
 }
 
+#strip-social {
+  a {
+    display: inline-block;
+    margin: 0 ($spacer-x / 2);
+  }
+  svg {
+    width: 49px;
+    height: 49px;
+  }
+}
+
 #footer {
   text-align: center;
-  margin: $spacer-y $spacer-x 0;
   padding: $spacer-y 0;
-  border-top: 1px solid $brand-gray-light;
   color: $brand-gray-light;
 }
 
@@ -72,4 +84,10 @@ body > svg {
       width: 16.6%;
     }
   }
+}
+
+.strip {
+  margin: $spacer-y $spacer-x;
+  padding: $spacer-y 0 ($spacer-y * 2);
+  border-bottom: 1px solid $brand-gray-light;
 }
