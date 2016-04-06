@@ -28,7 +28,7 @@
     "build": "npm-run-all svg --parallel build:*",
     "watch": "npm-run-all --parallel watch:*",
     "clean": "rm -rf ./dist/*;",
-    "svg": "svgshelf 'svg/*' pages/bundle.svg && svgo pages/bundle.svg",
+    "svg": "svgshelf 'svg/*' pages/bundle.svg",
     "build:static": "rsync -a public/ dist",
     "build:css": "node build/sass.js | postcss --local-plugins --use autoprefixer --output dist/bundle.css",
     "build:html": "node build/jade.js",

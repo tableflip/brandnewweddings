@@ -1,2 +1,8 @@
 {
+  "exhibitImage": {
+    "type": "img"
+  },
+  "exhibitLink": {
+    "type": "url"
+  }
 }
