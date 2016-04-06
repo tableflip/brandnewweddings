@@ -1,3 +1,3 @@
 window.$ = window.jQuery = require('jquery')
 
-var $ = window.$
+// var $ = window.$

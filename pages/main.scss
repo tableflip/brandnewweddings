@@ -8,10 +8,10 @@
 
 // override boostrap with our custom vars
 // See `node_modules/bootstrap/scss/_variables.scss` for more options
-$brand-primary: #F4E17B !default;
-$brand-accent: #DAE0CC;
-$brand-gray: #2E343F;
-$brand-gray-light: #C6B877;
+$brand-primary: #7cc7c1 !default;
+$brand-accent: #b980b4;
+$brand-gray: #9d9d9c;
+$brand-gray-light: #dadada;
 $enable-rounded: false;
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
@@ -21,3 +21,55 @@ $display1-size: 2.4rem;
 $display1-weight: 500;
 
 @import 'bootstrap/scss/bootstrap';
+
+body > svg {
+  height: 0;
+}
+
+#header {
+  margin-bottom: $spacer-y;
+
+  .logo {
+    margin: ($spacer-y * 3) $spacer-x;
+
+    img {
+      margin: 0 auto;
+      width: 585px;
+    }
+  }
+  .navbar {
+    margin: 0 $spacer-x;
+    padding: ($spacer-y * 0.5) 0;
+    border-top: 1px solid $brand-gray-light;
+    border-bottom: 1px solid $brand-gray-light;
+  }
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: $brand-accent;
+  }
+  .nav-item {
+    margin: 0;
+    width: 50%;
+
+    a {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#footer {
+  text-align: center;
+  margin: $spacer-y $spacer-x 0;
+  padding: $spacer-y 0;
+  border-top: 1px solid $brand-gray-light;
+  color: $brand-gray-light;
+}
+
+@include media-breakpoint-up(lg) {
+  #header {
+    .nav-item {
+      width: 16.6%;
+    }
+  }
+}

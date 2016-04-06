@@ -1,0 +1,21 @@
+mixin header (activeItemId)
+  header#header
+    .logo
+      a(href=meta.relativePathToRoot title='Br&new Weddings')
+        img.img-fluid(src='#{meta.relativePathToRoot}/images/logo-brandnewweddings.jpg' alt='Br&new Weddings logo')
+    nav.navbar.navbar-light
+      ul.nav.navbar-nav.container
+        +headerItem('about', 'About', activeItemId)
+        +headerItem('real-weddings', 'Real Weddings', activeItemId)
+        +headerItem('inspiration', 'Inspiration', activeItemId)
+        +headerItem('pricing', 'Pricing', activeItemId)
+        +headerItem('messages', 'Messages', activeItemId)
+        +headerItem('contact', 'Contact', activeItemId)
+
+mixin headerItem (id, text, activeItemId)
+  li.nav-item(class={active: id === activeItemId})
+    a.nav-link(href='#{meta.relativePathToRoot}/#{id}')
+      =text
+      if id === activeItemId
+        span.sr-only (current)
+  
