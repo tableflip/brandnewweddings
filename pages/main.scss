@@ -71,22 +71,9 @@ h1 {
   }
 }
 
-#strip-social {
-  a {
-    display: inline-block;
-    margin: 0 ($spacer-x / 2);
-  }
-  svg {
-    width: 49px;
-    height: 49px;
-  }
-}
-
-#strip-exhibit {
-  img {
-    margin: 0 auto $spacer-y;
-  }
-}
+@import 'social';
+@import 'exhibit';
+@import 'awards';
 
 #footer {
   text-align: center;
@@ -101,14 +88,6 @@ h1 {
   margin: $spacer-y $spacer-x;
   padding: $spacer-y 0 ($spacer-y * 2);
   border-bottom: 1px solid $brand-gray-light;
-}
-
-@include media-breakpoint-up(md) {
-  #strip-exhibit {
-    img {
-      margin: 0 0 0 auto;
-    }
-  }
 }
 
 @include media-breakpoint-up(lg) {

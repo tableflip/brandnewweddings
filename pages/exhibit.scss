@@ -1,0 +1,13 @@
+#strip-exhibit {
+  img {
+    margin: 0 auto $spacer-y;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #strip-exhibit {
+    img {
+      margin: 0 0 0 auto;
+    }
+  }
+}

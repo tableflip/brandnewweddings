@@ -2,5 +2,13 @@
   "exhibitTitle": "Come & See Us...",
   "exhibitText": "We will be exhibiting at Brides 'the show' this October. Drop in and say hi and chat with our designer about your ideas.",
   "exhibitImage": "/images/tmp/brides-show.png",
-  "exhibitLink": "http://bridestheshow.co.uk/"
+  "exhibitLink": "http://bridestheshow.co.uk/",
+  "awardsImage1": "/images/tmp/award1.jpg",
+  "awardsLink1": "http://www.the-wedding-industry-awards.co.uk/",
+  "awardsImage2": "/images/tmp/award2.png",
+  "awardsLink2": "http://showmethepretty.co.uk/",
+  "awardsImage3": "/images/tmp/award3.png",
+  "awardsLink3": "http://www.guidesforbrides.co.uk/",
+  "awardsImage4": "/images/tmp/award4.jpg",
+  "awardsLink4": "http://www.the-wedding-industry-awards.co.uk/"
 }
