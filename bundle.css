@@ -2081,6 +2081,8 @@ a.bg-danger:focus, a.bg-danger:hover { background-color: #c9302c; }
 
 @media print { .hidden-print { display: none !important; } }
 
+body { letter-spacing: 1px; }
+
 body > svg { height: 0; }
 
 h1 { letter-spacing: 2px; }
@@ -2125,7 +2127,7 @@ h1 { letter-spacing: 2px; }
 
 .row-mosaic::after { content: ""; display: table; clear: both; }
 
-.row-mosaic .col-xs-6, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
+.row-mosaic .col-xs-4, .row-mosaic .col-xs-6, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
 
 @media (min-width: 992px) { #header .nav-item { width: 16.6%; } }
 
