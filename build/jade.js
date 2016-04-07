@@ -11,7 +11,7 @@ var requireDir = require('require-dir')
 
 var helperPath = path.join(__dirname, '..', 'helpers')
 var helpers
-if (pathExists.sync(helperPath)) helpers = requireDir('../helpers')
+if (pathExists.sync(helperPath)) helpers = requireDir('../helpers', { camelcase: true })
 
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
 var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))
