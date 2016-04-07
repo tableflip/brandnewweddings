@@ -6,8 +6,12 @@ var jade = require('jade')
 var async = require('async')
 var mkdirp = require('mkdirp')
 var extend = require('extend')
+var pathExists = require('path-exists')
 var requireDir = require('require-dir')
-var helpers = requireDir('../helpers')
+
+var helperPath = path.join(__dirname, '..', 'helpers')
+var helpers
+if (pathExists.sync(helperPath)) helpers = requireDir('../helpers')
 
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
 var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))

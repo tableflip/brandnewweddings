@@ -29,7 +29,7 @@
   "awardsLink4": {
     "type": "url"
   },
-  "recentWeddings": [{
+  "realWeddings": [{
     "name": {
       "type": "string",
       "default": "New wedding"
