@@ -11,8 +11,7 @@ var pathExists = require('path-exists')
 var requireDir = require('require-dir')
 
 var helperPath = path.join(__dirname, '..', 'helpers')
-var helpers
-if (pathExists.sync(helperPath)) helpers = requireDir('../helpers', { camelcase: true })
+var helpers = pathExists.sync(helperPath) ? requireDir(helperPath, { camelcase: true }) : {}
 slug.defaults.mode = 'rfc3986'
 
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))

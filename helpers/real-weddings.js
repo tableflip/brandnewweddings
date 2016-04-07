@@ -1,5 +1,4 @@
-var path = require('path')
-var realWeddingsContent = require(path.join(__dirname, '..', 'pages/real-weddings/content.json'))
+var realWeddingsContent = require('../pages/real-weddings/content.json')
 
 module.exports = {
   recent: function (number) {
