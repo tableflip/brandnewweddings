@@ -2119,6 +2119,8 @@ h1 { letter-spacing: 2px; }
 
 .text-accent { color: #b980b4; }
 
+.border-primary { border: 1px solid #7cc7c1; }
+
 .lead { letter-spacing: 3px; }
 
 .strip { margin: 1rem 1rem; padding: 1rem 0 2rem; border-bottom: 1px solid #dadada; }
@@ -2132,4 +2134,6 @@ h1 { letter-spacing: 2px; }
 @media (min-width: 992px) { #header .nav-item { width: 16.6%; } }
 
 .page-about .row-mosaic img { margin-bottom: 0.46875rem; }
+
+.page-about .media img { width: 258px; }
 
