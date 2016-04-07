@@ -1,9 +1,16 @@
 {
-  "exampleTextField": {
-    "type": "text",
-    "validation": {
-      "max": 65
+  "carousel": [{
+    "title": {
+      "type": "text",
+      "default": "New entry"
+     },
+    "image": {
+      "type": "img",
+      "default": "http://placehold.it/350x150"
+    },
+    "link": {
+      "type": "text",
+      "default": "http://example.com"
     }
-  },
-  "exampleTextareaField": { "type": "textarea" }
+  }]
 }

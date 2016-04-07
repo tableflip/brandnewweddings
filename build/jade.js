@@ -7,12 +7,12 @@ var async = require('async')
 var mkdirp = require('mkdirp')
 var slug = require('slug')
 var extend = require('extend')
-var md = require('markdown-it')({
-  html: true,
-  breaks: true,
-  linkify: true
-})
+var pathExists = require('path-exists')
+var requireDir = require('require-dir')
 
+var helperPath = path.join(__dirname, '..', 'helpers')
+var helpers
+if (pathExists.sync(helperPath)) helpers = requireDir('../helpers', { camelcase: true })
 slug.defaults.mode = 'rfc3986'
 
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
@@ -62,10 +62,10 @@ find.file(/\index.jade$/, inputDir, (files) => {
     var locals = {
       meta: task.meta,
       content: task.content,
-      md: md,
       facts: require('../facts.json'),
       pretty: true
     }
+    extend(locals, helpers)
     task.html = jade.renderFile(task.input, locals)
   })
 

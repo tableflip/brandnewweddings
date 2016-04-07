@@ -1,1 +1,16 @@
-{}
+{
+  "weddings": [{
+    "name": {
+      "type": "string",
+      "default": "New wedding"
+    },
+    "description": {
+      "type": "string",
+      "default": "Wedding description"
+    },
+    "image": {
+      "type": "img",
+      "default": "http://placehold.it/350x250"
+    }
+  }]
+}

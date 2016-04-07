@@ -1,9 +1,6 @@
 mixin awardsImage (src, href)
   a(href=href target='_blank')
-    if facts.exhibitImage[0] === '/'
-      img.img-fluid(src='#{meta.relativePathToRoot}#{src}')
-    else
-      img.img-fluid(src=src)
+    img.img-fluid(src=src)
 
 aside#strip-awards.strip
   .container

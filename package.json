@@ -51,11 +51,16 @@
     "jadeify": "^4.6.0",
     "jquery": "^2.2.1",
     "markdown-it": "^6.0.0",
+    "moment": "^2.12.0",
     "npm-run-all": "^1.2.11",
+    "path-exists": "^2.1.0",
+    "plural": "^0.2.0",
     "postcss": "^5.0.9",
     "postcss-cli": "^2.5.1",
     "postcss-import": "^8.1.0",
-    "slug": "^0.9.1"
+    "require-dir": "^0.3.0",
+    "slug": "^0.9.1",
+    "tether": "^1.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
