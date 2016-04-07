@@ -5,6 +5,9 @@ var find = require('find')
 var jade = require('jade')
 var async = require('async')
 var mkdirp = require('mkdirp')
+var extend = require('extend')
+var requireDir = require('require-dir')
+var helpers = requireDir('../helpers')
 var md = require('markdown-it')({
   html: true,
   breaks: true,
@@ -42,6 +45,7 @@ find.file(/\index.jade$/, inputDir, (files) => {
       facts: require('../facts.json'),
       pretty: true
     }
+    extend(locals, helpers)
     task.html = jade.renderFile(task.input, locals)
   })
 
