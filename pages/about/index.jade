@@ -44,6 +44,13 @@ html(lang='en')
               img.img-fluid(src='#{content.whatWeOfferImage6}-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/')
           .text-xs-center
             !=md.render(content.whatWeOfferText)
+      section.strip
+        .container.text-xs-center
+          h1.text-uppercase.text-accent=content.pickListTitle
+          if content.pickListLeadText
+            .text-accent
+              !=md.render(content.pickListLeadText)
+          !=md.render(content.pickListText)
     include ../social
     include ../exhibit
     include ../awards
