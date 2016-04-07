@@ -22,14 +22,16 @@ html(lang='en')
           h1.text-uppercase=content.title
           p.lead=content.intro
     section.strip
-      - var weddings = realWeddings.recent(3)
-      each wedding in weddings
-        .col-sm-6.col-md-4
-          .card
-            img.card-img-top(src=wedding.image)
-            .card-block
-              h4.card-title=wedding.name
-              p.cart-text=wedding.description
+      .container
+        .row
+          - var weddings = realWeddings.recent(3)
+          each wedding in weddings
+            .col-sm-6.col-md-4
+              .card
+                img.card-img-top(src=wedding.image style="width: 100%;")
+                .card-block
+                  h4.card-title=wedding.name
+                  p.cart-text=wedding.description
     include ../social
     include ../exhibit
     include ../awards
