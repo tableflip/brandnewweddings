@@ -1,5 +1,17 @@
 {
 	"pageTitle": "Homepage",
-	"exampleTextField": "Foobar",
-	"exampleTextareaField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	"carousel": [
+		{
+			"title": "Hot trend 2016 - Water colour",
+			"image": "images/tmp/home-splash.png",
+			"link": "real-weddings"
+		},
+		{
+			"title": "Hot trend 2016 - Water colour",
+			"image": "images/tmp/home-splash.png",
+			"link": "real-weddings"
+		}
+	],
+	"title": "We are here to bring your story to life!",
+	"intro": "Award winning creators of bespoke & truly unique wedding stationery."
 }

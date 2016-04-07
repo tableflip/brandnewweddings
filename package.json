@@ -58,7 +58,8 @@
     "postcss": "^5.0.9",
     "postcss-cli": "^2.5.1",
     "postcss-import": "^8.1.0",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "tether": "^1.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
