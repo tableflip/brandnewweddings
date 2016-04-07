@@ -18,7 +18,7 @@ html(lang='en')
             .carousel-inner(role='listbox')
               each item, i in content.carousel
                 a.carousel-item(href=item.link class={active: i === 0})
-                  img(src='#{item.image}-/format/jpeg/-/scale_crop/2048x1356/-/quality/lightest/' alt=item.title)
+                  img(src='#{item.image}-/format/jpeg/-/scale_crop/2048x1356/-/quality/lighter/' alt=item.title)
           .text-xs-center
             h1.text-uppercase=content.title
             p.lead=content.intro

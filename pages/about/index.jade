@@ -13,22 +13,37 @@ html(lang='en')
         .container
           .row.row-mosaic.m-b-2
             .col-md-6
-              img.img-fluid(src='#{content.image1}-/format/jpeg/-/scale_crop/1920x1920/center/-/quality/lightest/')
+              img.img-fluid(src='#{content.introImage1}-/format/jpeg/-/scale_crop/1920x1920/center/-/quality/lighter/')
             .col-md-6
               .row.row-mosaic
                 .col-xs-6
-                  img.img-fluid(src='#{content.image2}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
-                  img.img-fluid(src='#{content.image3}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
+                  img.img-fluid(src='#{content.introImage2}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/')
+                  img.img-fluid(src='#{content.introImage3}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/')
                 .col-xs-6
-                  img.img-fluid(src='#{content.image4}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
-                  img.img-fluid(src='#{content.image5}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
+                  img.img-fluid(src='#{content.introImage4}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/')
+                  img.img-fluid(src='#{content.introImage5}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/')
           .row
             .col-lg-4
-              h1.h2.text-accent=content.title1
-              !=md.render(content.text1)
+              h1.h2.text-accent=content.introTitle1
+              !=md.render(content.introText1)
             .col-lg-8
-              h1.h2.text-accent=content.title2
-              !=md.render(content.text2)
+              h1.h2.text-accent=content.introTitle2
+              !=md.render(content.introText2)
+      section.strip
+        .container
+          h1.text-xs-center.text-accent.text-uppercase.m-b-2=content.whatWeOfferTitle
+          .row.row-mosaic.m-b-2
+            .col-xs-4
+              img.img-fluid(src='#{content.whatWeOfferImage1}-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/')
+              img.img-fluid(src='#{content.whatWeOfferImage2}-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/')
+            .col-xs-4
+              img.img-fluid(src='#{content.whatWeOfferImage3}-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/')
+              img.img-fluid(src='#{content.whatWeOfferImage4}-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/')
+            .col-xs-4
+              img.img-fluid(src='#{content.whatWeOfferImage5}-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/')
+              img.img-fluid(src='#{content.whatWeOfferImage6}-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/')
+          .text-xs-center
+            !=md.render(content.whatWeOfferText)
     include ../social
     include ../exhibit
     include ../awards
