@@ -1,0 +1,13 @@
+#strip-awards {
+  img {
+    margin: ($spacer-y / 2) auto;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #strip-awards {
+    img {
+      margin: 0 auto;
+    }
+  }
+}

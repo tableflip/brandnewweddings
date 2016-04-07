@@ -5,6 +5,30 @@
   "exhibitLink": {
     "type": "url"
   },
+  "awardsImage1": {
+    "type": "img"
+  },
+  "awardsLink1": {
+    "type": "url"
+  },
+  "awardsImage2": {
+    "type": "img"
+  },
+  "awardsLink2": {
+    "type": "url"
+  },
+  "awardsImage3": {
+    "type": "img"
+  },
+  "awardsLink3": {
+    "type": "url"
+  },
+  "awardsImage4": {
+    "type": "img"
+  },
+  "awardsLink4": {
+    "type": "url"
+  },
   "recentWeddings": [{
     "name": {
       "type": "string",

@@ -1,0 +1,18 @@
+mixin awardsImage (src, href)
+  a(href=href target='_blank')
+    if facts.exhibitImage[0] === '/'
+      img.img-fluid(src='#{meta.relativePathToRoot}#{src}')
+    else
+      img.img-fluid(src=src)
+
+aside#strip-awards.strip
+  .container
+    .row
+      .col-xs-6.col-sm-offset-2.col-sm-4.col-lg-2
+        +awardsImage(facts.awardsImage1, facts.awardsLink1)
+      .col-xs-6.col-sm-4.col-lg-2
+        +awardsImage(facts.awardsImage2, facts.awardsLink2)
+      .col-xs-6.col-sm-offset-2.col-sm-4.col-lg-offset-0.col-lg-2
+        +awardsImage(facts.awardsImage3, facts.awardsLink3)
+      .col-xs-6.col-sm-4.col-lg-2
+        +awardsImage(facts.awardsImage4, facts.awardsLink4)

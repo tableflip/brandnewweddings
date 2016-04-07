@@ -8,11 +8,6 @@ var mkdirp = require('mkdirp')
 var extend = require('extend')
 var requireDir = require('require-dir')
 var helpers = requireDir('../helpers')
-var md = require('markdown-it')({
-  html: true,
-  breaks: true,
-  linkify: true
-})
 
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
 var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))
@@ -41,7 +36,6 @@ find.file(/\index.jade$/, inputDir, (files) => {
     var locals = {
       meta: task.meta,
       content: require(task.content),
-      md: md,
       facts: require('../facts.json'),
       pretty: true
     }

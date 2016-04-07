@@ -1,0 +1,10 @@
+#strip-social {
+  a {
+    display: inline-block;
+    margin: 0 ($spacer-x / 2);
+  }
+  svg {
+    width: 49px;
+    height: 49px;
+  }
+}
