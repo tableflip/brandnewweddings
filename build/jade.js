@@ -5,11 +5,13 @@ var find = require('find')
 var jade = require('jade')
 var async = require('async')
 var mkdirp = require('mkdirp')
-var md = require('markdown-it')({
-  html: true,
-  breaks: true,
-  linkify: true
-})
+var extend = require('extend')
+var pathExists = require('path-exists')
+var requireDir = require('require-dir')
+
+var helperPath = path.join(__dirname, '..', 'helpers')
+var helpers
+if (pathExists.sync(helperPath)) helpers = requireDir('../helpers', { camelcase: true })
 
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
 var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))
@@ -38,10 +40,10 @@ find.file(/\index.jade$/, inputDir, (files) => {
     var locals = {
       meta: task.meta,
       content: require(task.content),
-      md: md,
       facts: require('../facts.json'),
       pretty: true
     }
+    extend(locals, helpers)
     task.html = jade.renderFile(task.input, locals)
   })
 
