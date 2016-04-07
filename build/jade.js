@@ -13,6 +13,8 @@ var md = require('markdown-it')({
   linkify: true
 })
 
+slug.defaults.mode = 'rfc3986'
+
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
 var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))
 

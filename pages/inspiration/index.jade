@@ -8,19 +8,6 @@ html(lang='en')
     title=content.pageTitle
   body.page-inspiration
     +header('inspiration')
-    ul
-      li
-        a(href='/inspiration') Inspiration home
-      each subPage in content.subPages
-        li
-          a(href=subPage.path)=subPage.title
-    if content.collectionEntry
-      .card.card-block
-        h4.card-title=content.collectionEntry.title
-        p.card-text=content.collectionEntry.subtitle
-    else
-      .card.card-block
-        p.card-text Please select an item above.
     include ../social
     include ../exhibit
     include ../awards

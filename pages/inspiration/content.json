@@ -1,17 +1,3 @@
 {
-	"pageTitle": "Inspiration",
-	"collection": {
-		"key": "subPages",
-		"slugFrom": "title"
-	},
-	"subPages": [
-		{
-			"title": "Subpage 1",
-			"subtitle": "First subpage"
-		},
-		{
-			"title": "Subpage 2",
-			"subtitle": "Second subpage"
-		}
-	]
+	"pageTitle": "Inspiration"
 }

@@ -1,0 +1,12 @@
+{
+  "subPages": [{
+    "title": {
+      "type": "text",
+      "default": "New page"
+    },
+    "subtitle": {
+      "type": "textarea",
+      "default": "A description of the page"
+    }
+  }]
+}
