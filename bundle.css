@@ -2107,13 +2107,17 @@ h1 { letter-spacing: 2px; }
 
 #strip-exhibit img { margin: 0 auto 1rem; }
 
+@media (min-width: 768px) { #strip-exhibit img { margin: 0 0 0 auto; } }
+
+#strip-awards img { margin: 0.5rem auto; }
+
+@media (min-width: 992px) { #strip-awards img { margin: 0 auto; } }
+
 #footer { text-align: center; padding: 1rem 0; color: #dadada; }
 
 .lead { letter-spacing: 3px; }
 
 .strip { margin: 1rem 1rem; padding: 1rem 0 2rem; border-bottom: 1px solid #dadada; }
-
-@media (min-width: 768px) { #strip-exhibit img { margin: 0 0 0 auto; } }
 
 @media (min-width: 992px) { #header .nav-item { width: 16.6%; } }
 
