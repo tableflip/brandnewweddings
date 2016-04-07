@@ -2119,5 +2119,13 @@ h1 { letter-spacing: 2px; }
 
 .strip { margin: 1rem 1rem; padding: 1rem 0 2rem; border-bottom: 1px solid #dadada; }
 
+.row-mosaic { margin-left: -0.23438rem; margin-right: -0.23438rem; }
+
+.row-mosaic::after { content: ""; display: table; clear: both; }
+
+.row-mosaic .col-xs-6, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
+
 @media (min-width: 992px) { #header .nav-item { width: 16.6%; } }
+
+.page-about .row-mosaic img { margin-bottom: 0.46875rem; }
 
