@@ -89,6 +89,13 @@ h1 {
   padding: $spacer-y 0 ($spacer-y * 2);
   border-bottom: 1px solid $brand-gray-light;
 }
+.row-mosaic {
+  @include make-row($grid-gutter-width / 4);
+  // For brevity not all columns included here - add if you need
+  .col-xs-6, .col-md-6 {
+    @include make-col($grid-gutter-width / 4);
+  }
+}
 
 @include media-breakpoint-up(lg) {
   #header {
@@ -97,3 +104,5 @@ h1 {
     }
   }
 }
+
+@import 'about/about';

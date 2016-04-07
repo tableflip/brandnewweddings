@@ -8,6 +8,19 @@ html(lang='en')
     title=content.pageTitle
   body.page-about
     +header('about')
+    section.strip
+      .container
+        .row.row-mosaic
+          .col-md-6
+            img.img-fluid(src='#{content.image1}-/format/jpeg/-/scale_crop/1920x1920/center/-/quality/lightest/')
+          .col-md-6
+            .row.row-mosaic
+              .col-xs-6
+                img.img-fluid(src='#{content.image2}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
+                img.img-fluid(src='#{content.image3}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
+              .col-xs-6
+                img.img-fluid(src='#{content.image4}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
+                img.img-fluid(src='#{content.image5}-/format/jpeg/-/scale_crop/510x510/center/-/quality/lightest/')
     include ../social
     include ../exhibit
     include ../awards
