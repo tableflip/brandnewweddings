@@ -93,6 +93,9 @@ h1 {
 .text-accent {
   color: $brand-accent;
 }
+.border-primary {
+  border: 1px solid $brand-primary;
+}
 .lead {
   letter-spacing: 3px;
 }

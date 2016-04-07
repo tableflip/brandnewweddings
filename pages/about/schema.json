@@ -7,5 +7,14 @@
   },
   "whatWeOfferText": {
     "type": "textarea"
+  },
+  "pickListLeadText": {
+    "type": "textarea"
+  },
+  "pickListText": {
+    "type": "textarea"
+  },
+  "howWeWorkText": {
+    "type": "textarea"
   }
 }

@@ -51,6 +51,30 @@ html(lang='en')
             .text-accent
               !=md.render(content.pickListLeadText)
           !=md.render(content.pickListText)
+      section.strip
+        .container
+          .row
+            .col-xl-offset-1.col-xl-10
+              .media
+                .media-body.media-middle.text-xs-center.text-md-right
+                  h1.text-uppercase.text-accent=content.howWeWorkTitle
+                  p.hidden-md-up
+                    img.img-circle.border-primary(src='#{content.howWeWorkImage}-/format/jpeg/-/scale_crop/516x516/center/-/quality/lighter/')
+                  !=md.render(content.howWeWorkText)
+                .media-right.media-middle.p-l-3.hidden-sm-down
+                  img.media-object.img-circle.border-primary(src='#{content.howWeWorkImage}-/format/jpeg/-/scale_crop/516x516/center/-/quality/lighter/')
+      section.strip
+        .container
+          .row
+            .col-xl-offset-1.col-xl-10
+              .media
+                .media-left.media-middle.p-r-3.hidden-sm-down
+                  img.media-object.img-circle.border-primary(src='#{content.specialistImage}-/format/jpeg/-/scale_crop/516x516/center/-/quality/lighter/')
+                .media-body.media-middle.text-xs-center.text-md-left
+                  h1.text-uppercase.text-accent=content.specialistTitle
+                  p.hidden-md-up
+                    img.img-circle.border-primary(src='#{content.specialistImage}-/format/jpeg/-/scale_crop/516x516/center/-/quality/lighter/')
+                  !=md.render(content.specialistText)
     include ../social
     include ../exhibit
     include ../awards
