@@ -5,6 +5,8 @@ var find = require('find')
 var jade = require('jade')
 var async = require('async')
 var mkdirp = require('mkdirp')
+var slug = require('slug')
+var extend = require('extend')
 var md = require('markdown-it')({
   html: true,
   breaks: true,
@@ -21,7 +23,7 @@ find.file(/\index.jade$/, inputDir, (files) => {
       name: name,
       input: tpl,
       output: path.join(outputDir, name, 'index.html'),
-      content: path.join(path.dirname(tpl), 'content.json'),
+      content: require(path.join(path.dirname(tpl), 'content.json')),
       meta: { relativePathToRoot: '..' }
     }
   })
@@ -34,10 +36,30 @@ find.file(/\index.jade$/, inputDir, (files) => {
       task.meta.relativePathToRoot = '.'
     })
 
+  // add tasks for any collection routes
+  tasks
+    .forEach((task) => {
+      var collectionMeta = task.content.collection
+      var collection = collectionMeta && task.content[collectionMeta.key]
+      if (!collection) return
+      // Add tasks to build each subpage to the queue
+      collection.forEach((entry) => {
+        entry.slug = slug(entry[collectionMeta.slugFrom])
+        entry.path = path.join('/', task.name, `${entry.slug}.html`)
+        tasks.push({
+          name: `${task.name}/${entry.slug}`,
+          input: task.input,
+          output: path.join(outputDir, task.name, `${entry.slug}.html`),
+          content: extend({}, task.content, { collectionEntry: entry }),
+          meta: { relativePathToRoot: '..' }
+        })
+      })
+    })
+
   tasks.forEach((task) => {
     var locals = {
       meta: task.meta,
-      content: require(task.content),
+      content: task.content,
       md: md,
       facts: require('../facts.json'),
       pretty: true
