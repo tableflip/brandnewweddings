@@ -72,10 +72,5 @@
     "watchify": "^3.7.0"
   },
   "subPages": {
-    "subpages-example": {
-      "field": "subPages",
-      "slugFrom": "title",
-      "template": "subpage"
-    }
   }
 }
