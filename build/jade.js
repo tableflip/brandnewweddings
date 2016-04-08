@@ -45,14 +45,14 @@ find.file(/\index.jade$/, inputDir, (files) => {
       if (!subPageMeta) return
       var collection = task.content[subPageMeta.field]
       // Add tasks to build each subpage to the queue
-      collection.forEach((entry) => {
-        entry.slug = slug(entry[subPageMeta.slugFrom])
-        entry.path = path.join('/', task.name, `${entry.slug}.html`)
+      collection.forEach((entry, ind) => {
+        entry._slug = slug(entry[subPageMeta.slugFrom])
+        entry._index = ind
         tasks.push({
-          name: `${task.name}/${entry.slug}`,
+          name: `${task.name}/${entry._slug}`,
           input: task.input,
-          output: path.join(outputDir, task.name, `${entry.slug}.html`),
-          content: extend({}, task.content, { collectionEntry: entry }),
+          output: path.join(outputDir, task.name, `${entry._slug}.html`),
+          content: extend({}, task.content, { _entry: entry }),
           meta: { relativePathToRoot: '..' }
         })
       })
