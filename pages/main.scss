@@ -114,7 +114,7 @@ h2 {
 .row-mosaic {
   @include make-row($grid-gutter-width / 4);
   // For brevity not all columns included here - add if you need
-  .col-xs-4, .col-xs-6, .col-md-6 {
+  .col-xs-4, .col-xs-6, .col-xs-12, .col-sm-4, .col-sm-8, .col-md-6 {
     @include make-col($grid-gutter-width / 4);
   }
 }
@@ -126,6 +126,21 @@ h2 {
   }
   thead th {
     border-bottom-width: 1px;
+  }
+}
+
+.page-real-weddings {
+  .img-container {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    &.high {
+      height: 350px;
+    }
+    &.v-high {
+      height: 450px;
+    }
   }
 }
 

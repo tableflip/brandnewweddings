@@ -73,5 +73,10 @@
     "watchify": "^3.7.0"
   },
   "subPages": {
+    "real-weddings": {
+      "field": "weddings",
+      "slugFrom": "name",
+      "template": "wedding"
+    }
   }
 }

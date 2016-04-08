@@ -8,6 +8,16 @@ html(lang='en')
     title=content.pageTitle
   body.page-real-weddings
     +header('real-weddings')
+    .container
+      h5.text-xs-center.text-uppercase - Real Weddings -
+      .row
+        each wedding in content.weddings
+          .col-sm-6.col-md-4
+            a.card(href='./#{wedding._slug}.html')
+              .img-container.card-img-top(style="background-image: url('#{wedding.previewImage}');")
+              .card-block
+                h3.text-uppercase.card-title=wedding.name
+                p.card-text=wedding.description
     include ../social
     include ../exhibit
     include ../awards
