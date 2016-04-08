@@ -33,10 +33,12 @@ $display1-weight: 500;
 
 @import 'bootstrap/scss/bootstrap';
 
+body {
+  letter-spacing: 1px;
+}
 body > svg {
   height: 0;
 }
-
 h1 {
   letter-spacing: 2px;
 }
@@ -91,6 +93,9 @@ h1 {
 .text-accent {
   color: $brand-accent;
 }
+.border-primary {
+  border: 1px solid $brand-primary;
+}
 .lead {
   letter-spacing: 3px;
 }
@@ -102,7 +107,7 @@ h1 {
 .row-mosaic {
   @include make-row($grid-gutter-width / 4);
   // For brevity not all columns included here - add if you need
-  .col-xs-6, .col-md-6 {
+  .col-xs-4, .col-xs-6, .col-md-6 {
     @include make-col($grid-gutter-width / 4);
   }
 }
