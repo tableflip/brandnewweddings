@@ -2139,7 +2139,7 @@ h2 { letter-spacing: 2px; }
 
 .row-mosaic::after { content: ""; display: table; clear: both; }
 
-.row-mosaic .col-xs-4, .row-mosaic .col-xs-6, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
+.row-mosaic .col-xs-2, .row-mosaic .col-xs-3, .row-mosaic .col-xs-4, .row-mosaic .col-xs-5, .row-mosaic .col-xs-6, .row-mosaic .col-xs-7, .row-mosaic .col-md-3, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
 
 .table-bordered-left-right td { border-top: 0; border-bottom: 0; }
 
@@ -2152,4 +2152,6 @@ h2 { letter-spacing: 2px; }
 .page-about .row-mosaic img { margin-bottom: 0.46875rem; }
 
 .page-about .media img { width: 258px; }
+
+.page-inspiration .row-mosaic img { margin-bottom: 0.46875rem; }
 
