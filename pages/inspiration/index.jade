@@ -40,6 +40,13 @@ html(lang='en')
           .col-lg-offset-1.col-lg-10
             h1.text-uppercase=content.introTitle
             !=md.render(content.introText)
+    section.strip
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10.text-xs-center
+            h1.text-uppercase - Instagram -
+            script(src='//lightwidget.com/widgets/lightwidget.js')
+            iframe(src='//lightwidget.com/widgets/ad572eb5ef935bab9eb84b4aefdd127e.html' id='lightwidget_ad572eb5ef' name='lightwidget_ad572eb5ef'  scrolling='no' allowtransparency='true' class='lightwidget-widget' style='width: 100%; border: 0; overflow: hidden;')
     include ../social
     include ../exhibit
     include ../awards
