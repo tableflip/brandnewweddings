@@ -25,7 +25,8 @@
 		"masonryImageTop": "http://placehold.it/800x600",
 		"masonryImageLeft": "http://placehold.it/200x300",
 		"masonryImageRight": "http://placehold.it/500x300",
-		"masonryImageBottom": "http://placehold.it/800x600"
+		"masonryImageBottom": "http://placehold.it/800x600",
+		"featured": true
   },
 	{
 		"name": "Assimilated optimizing benchmark",
@@ -51,7 +52,8 @@
 		"masonryImageTop": "http://princeton.regency.hyatt.com/content/dam/PropertyWebsites/global/Media/All/Hyatt-Green-White-Wedding-Bouquet.jpg",
 		"masonryImageLeft": "http://cdn.playbuzz.com/cdn/2abb72bd-ba34-473e-811a-bed644973ea9/998d69f1-1a2d-4624-994a-e8586099c2ab.jpg",
 		"masonryImageRight": "http://theseptemberstandard.com/wp-content/uploads/2015/11/how-to-make-a-wedding-checklist.jpg",
-		"masonryImageBottom": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg"
+		"masonryImageBottom": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg",
+		"featured": false
 	},
 	{
 		"name": "Synergistic fault-tolerant product",
@@ -77,7 +79,8 @@
 		"masonryImageTop": "http://cdn.playbuzz.com/cdn/0dd265bf-79ff-418e-a51b-adc791626ebe/476b6fc1-5f65-4cb2-88be-558860d8f795.jpg",
 		"masonryImageLeft": "http://granlibakken.com/wpgranlibakken/wp-content/uploads/2015/11/winter-wedding.jpg",
 		"masonryImageRight": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg",
-		"masonryImageBottom": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg"
+		"masonryImageBottom": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg",
+		"featured": false
 	},
 	{
 		"name": "Adaptive transitional analyzer",
@@ -103,7 +106,8 @@
 		"masonryImageTop": "http://cdn.playbuzz.com/cdn/2abb72bd-ba34-473e-811a-bed644973ea9/998d69f1-1a2d-4624-994a-e8586099c2ab.jpg",
 		"masonryImageLeft": "https://pixabay.com/static/uploads/photo/2015/06/05/18/42/wedding-798773_960_720.jpg",
 		"masonryImageRight": "http://granlibakken.com/wpgranlibakken/wp-content/uploads/2015/11/winter-wedding.jpg",
-		"masonryImageBottom": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg"
+		"masonryImageBottom": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
+		"featured": false
 	},
 	{
 		"name": "Reactive global capability",
@@ -129,7 +133,8 @@
 		"masonryImageTop": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg",
 		"masonryImageLeft": "http://redcarpetcharters.com/wp-content/uploads/2015/08/group-transportation-for-wedding.jpg",
 		"masonryImageRight": "http://princeton.regency.hyatt.com/content/dam/PropertyWebsites/global/Media/All/Hyatt-Green-White-Wedding-Bouquet.jpg",
-		"masonryImageBottom": "http://www.unclebobs.com/blog/wp-content/uploads/2013/11/Wedding_plan1.jpg"
+		"masonryImageBottom": "http://www.unclebobs.com/blog/wp-content/uploads/2013/11/Wedding_plan1.jpg",
+		"featured": false
 	},
 	{
 		"name": "Persistent user-facing emulation",
@@ -155,7 +160,8 @@
 		"masonryImageTop": "http://princeton.regency.hyatt.com/content/dam/PropertyWebsites/global/Media/All/Hyatt-Green-White-Wedding-Bouquet.jpg",
 		"masonryImageLeft": "http://cdn.playbuzz.com/cdn/0dd265bf-79ff-418e-a51b-adc791626ebe/476b6fc1-5f65-4cb2-88be-558860d8f795.jpg",
 		"masonryImageRight": "http://cdn.playbuzz.com/cdn/0dd265bf-79ff-418e-a51b-adc791626ebe/476b6fc1-5f65-4cb2-88be-558860d8f795.jpg",
-		"masonryImageBottom": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg"
+		"masonryImageBottom": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
+		"featured": false
 	},
 	{
 		"name": "Synergized interactive hierarchy",
@@ -181,7 +187,8 @@
 		"masonryImageTop": "http://happymarriageanniversary.com/wp-content/uploads/2015/10/wedding-anniversary-message-for-partner.jpg",
 		"masonryImageLeft": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg",
 		"masonryImageRight": "http://redcarpetcharters.com/wp-content/uploads/2015/08/group-transportation-for-wedding.jpg",
-		"masonryImageBottom": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg"
+		"masonryImageBottom": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg",
+		"featured": false
 	},
 	{
 		"name": "Fundamental leading edge hardware",
@@ -207,7 +214,8 @@
 		"masonryImageTop": "http://www.unclebobs.com/blog/wp-content/uploads/2013/11/Wedding_plan1.jpg",
 		"masonryImageLeft": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg",
 		"masonryImageRight": "https://pixabay.com/static/uploads/photo/2015/06/05/18/42/wedding-798773_960_720.jpg",
-		"masonryImageBottom": "https://pixabay.com/static/uploads/photo/2015/06/05/18/42/wedding-798773_960_720.jpg"
+		"masonryImageBottom": "https://pixabay.com/static/uploads/photo/2015/06/05/18/42/wedding-798773_960_720.jpg",
+		"featured": false
 	},
 	{
 		"name": "Open-source next generation time-frame",
@@ -233,7 +241,8 @@
 		"masonryImageTop": "http://www.unclebobs.com/blog/wp-content/uploads/2013/11/Wedding_plan1.jpg",
 		"masonryImageLeft": "http://cdn.playbuzz.com/cdn/0dd265bf-79ff-418e-a51b-adc791626ebe/476b6fc1-5f65-4cb2-88be-558860d8f795.jpg",
 		"masonryImageRight": "http://media1.popsugar-assets.com/files/2015/11/23/580/n/1922398/2d8b083b_edit_img_cover_file_39159878_1448243100_Zp1FLI6.xxxlarge/i/Sofia-Vergara-Joe-Manganiello-Wedding-Instagrams.jpg",
-		"masonryImageBottom": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg"
+		"masonryImageBottom": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg",
+		"featured": false
 	},
 	{
 		"name": "Focused methodical function",
@@ -259,32 +268,61 @@
 		"masonryImageTop": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
 		"masonryImageLeft": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
 		"masonryImageRight": "http://www.unclebobs.com/blog/wp-content/uploads/2013/11/Wedding_plan1.jpg",
-		"masonryImageBottom": "http://cdn.playbuzz.com/cdn/2abb72bd-ba34-473e-811a-bed644973ea9/998d69f1-1a2d-4624-994a-e8586099c2ab.jpg"
+		"masonryImageBottom": "http://cdn.playbuzz.com/cdn/2abb72bd-ba34-473e-811a-bed644973ea9/998d69f1-1a2d-4624-994a-e8586099c2ab.jpg",
+		"featured": false
 	},
 	{
-		"name": "Diverse asynchronous superstructure",
-		"description": "Hat at Christiansenland",
-		"couple": "Julian & Carole",
-		"blurb": "Inventore eum ratione soluta autem explicabo et. Repellendus praesentium nobis id corporis est. Sint iste ut molestiae. Numquam recusandae quidem voluptate voluptates vitae qui incidunt alias. Sequi dicta facere nostrum quo delectus ipsa repellendus. Magnam est sequi et voluptatem.\n\nQuisquam similique autem et. Magnam excepturi sit fugit corrupti aut. Rerum aut accusamus cum culpa. Mollitia odio non fuga autem.\n\nExplicabo et et voluptatem quia quae non officiis laudantium. Omnis voluptas dolor eos reprehenderit molestiae omnis vitae eligendi quasi. Autem consequatur officia recusandae qui eius. Impedit asperiores distinctio. Ipsa aut modi excepturi accusantium et sed minima.\n\nNemo ut qui quo ratione labore et ipsum. Voluptate voluptas modi ipsa eos facere quia quidem sint. Rerum sunt quia aliquam doloribus in id sit reiciendis.",
-		"quote": "Ipsa porro provident esse reiciendis et. Nisi cupiditate possimus consequatur eaque corrupti architecto voluptatem aspernatur harum. Quisquam minus quam voluptatem sequi tenetur eum nostrum et architecto.",
-		"quoteFrom": "Julian & Carole Kutch",
-		"suppliers": [
-			"Chair: Barrows - Runolfsson",
-			"Soap: Leuschke, Harber and Kuhic",
-			"Tuna: Daugherty - Turner",
-			"Hat: Kulas, Gutkowski and Ritchie",
-			"Car: Hettinger - Deckow",
-			"Sausages: Leffler LLC"
-		],
-		"previewImage": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg",
-		"leadImage": "https://pixabay.com/static/uploads/photo/2015/06/05/18/42/wedding-798773_960_720.jpg",
-		"gridImage1": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
-		"gridImage2": "http://www.tuscanaresort.com/wp-content/uploads/2012/11/wedding_wallpaper_09d95.jpg",
-		"gridImage3": "http://princeton.regency.hyatt.com/content/dam/PropertyWebsites/global/Media/All/Hyatt-Green-White-Wedding-Bouquet.jpg",
-		"gridImage4": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg",
-		"masonryImageTop": "http://www.tuscanaresort.com/wp-content/uploads/2012/11/wedding_wallpaper_09d95.jpg",
-		"masonryImageLeft": "http://cdn.acquaphoto.com/wp-content/uploads/Fairmont_Mayakoba_Wedding_038.jpg",
-		"masonryImageRight": "http://static1.squarespace.com/static/54da6152e4b0377f28f8e129/t/555a0441e4b0148c6eefe7b2/1431962689326/Wedding-Banner.jpg?format=1500w",
-		"masonryImageBottom": "http://happymarriageanniversary.com/wp-content/uploads/2015/10/wedding-anniversary-message-for-partner.jpg"
-	}]
+    "name": "Persistent mission-critical pricing structure",
+    "description": "Computer at Trishafurt",
+    "couple": "Eldon & Willie",
+    "blurb": "Magnam optio qui deserunt doloremque quidem explicabo minima aliquid. Modi eum officiis. Exercitationem nobis expedita laudantium molestiae.\n\nEt voluptatem dolore numquam deserunt nesciunt. Veritatis temporibus tempore. Et excepturi sint voluptatem quas. Praesentium repudiandae ut at. Dolorem aliquam laborum ab enim. Sint optio excepturi architecto voluptatem ut placeat atque aspernatur et.\n\nEt nesciunt dolores. Ut id dolorem voluptatem ut. Hic rerum numquam voluptatibus velit voluptatem. Aliquam aut asperiores in impedit commodi saepe rerum. Exercitationem qui modi. Illo nesciunt quaerat.\n\nConsequatur est praesentium magnam non. Sit adipisci aliquam dignissimos aut amet. Voluptate debitis sit saepe sed consequatur enim quisquam consequatur. Adipisci in dolores autem. Assumenda alias ad ex deleniti quis odit impedit sint.",
+    "quote": "Id nihil facere nemo labore ut error eius. Sed maxime suscipit porro aut eum itaque blanditiis. Id provident aut praesentium alias consectetur sed et.",
+    "quoteFrom": "Eldon & Willie Sanford",
+    "suppliers": [
+      "Computer: Hammes - Ziemann",
+      "Computer: Ward, Sporer and Robel",
+      "Bacon: Lesch and Sons",
+      "Bacon: Cronin, Muller and Konopelski",
+      "Bacon: Ortiz Inc",
+      "Keyboard: Schumm and Sons"
+    ],
+    "previewImage": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
+    "leadImage": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg",
+    "gridImage1": "http://www.tuscanaresort.com/wp-content/uploads/2012/11/wedding_wallpaper_09d95.jpg",
+    "gridImage2": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
+    "gridImage3": "http://www.tuscanaresort.com/wp-content/uploads/2012/11/wedding_wallpaper_09d95.jpg",
+    "gridImage4": "http://granlibakken.com/wpgranlibakken/wp-content/uploads/2015/11/winter-wedding.jpg",
+    "masonryImageTop": "http://cdn.playbuzz.com/cdn/0dd265bf-79ff-418e-a51b-adc791626ebe/476b6fc1-5f65-4cb2-88be-558860d8f795.jpg",
+    "masonryImageLeft": "http://happymarriageanniversary.com/wp-content/uploads/2015/10/wedding-anniversary-message-for-partner.jpg",
+    "masonryImageRight": "http://happymarriageanniversary.com/wp-content/uploads/2015/10/wedding-anniversary-message-for-partner.jpg",
+    "masonryImageBottom": "http://cdn.playbuzz.com/cdn/0dd265bf-79ff-418e-a51b-adc791626ebe/476b6fc1-5f65-4cb2-88be-558860d8f795.jpg",
+		"featured": false
+  },
+  {
+    "name": "Multi-channelled well-modulated hub",
+    "description": "Shoes at North Elwin",
+    "couple": "Madilyn & Isaac",
+    "blurb": "Pariatur nam architecto voluptatem molestiae voluptas. Laudantium ut aperiam explicabo quia ut. Ab vero dolores minima nihil iusto vel et blanditiis quasi.\n\nEst ab et odit enim magni. Laborum nobis vitae. Libero qui aut error quia nemo ullam cumque nulla iusto. Officia sapiente consequatur laboriosam et minima voluptatem. Necessitatibus iure ut aut illum ipsam iste repellat sit pariatur. Quos officia aut ut aut et facilis.\n\nVeniam nam aliquid sint. Et nostrum unde veniam ea. Beatae magnam magnam eos voluptas ea hic praesentium. Labore itaque dolor sed sed. Sed delectus odit eum libero.\n\nSit in eligendi totam voluptatem. Voluptatem veritatis sed fugiat quo suscipit tenetur ad sint. Doloribus esse totam molestiae labore est delectus deserunt qui enim. Quam quo a libero accusamus animi.",
+    "quote": "Non eos soluta est cupiditate debitis quis. Excepturi et sed voluptatum accusamus quae reprehenderit consequatur cum qui. Ipsum mollitia sint totam et sed saepe accusamus.",
+    "quoteFrom": "Madilyn & Isaac Nitzsche",
+    "suppliers": [
+      "Ball: Breitenberg - Christiansen",
+      "Fish: Franecki, D'Amore and Gleichner",
+      "Tuna: Goldner, Weimann and Padberg",
+      "Chicken: Murazik and Sons",
+      "Bike: Turner, Heidenreich and Fritsch",
+      "Chips: Kutch, Daugherty and Rice"
+    ],
+    "previewImage": "http://granlibakken.com/wpgranlibakken/wp-content/uploads/2015/11/winter-wedding.jpg",
+    "leadImage": "http://funorfacts.org/wp-content/uploads/2015/04/a110.jpg",
+    "gridImage1": "http://www.mauchchunkballroom.com/wpballroom/wp-content/uploads/2013/06/wedding-rings-wallpaper1.jpg",
+    "gridImage2": "http://princeton.regency.hyatt.com/content/dam/PropertyWebsites/global/Media/All/Hyatt-Green-White-Wedding-Bouquet.jpg",
+    "gridImage3": "http://princeton.regency.hyatt.com/content/dam/PropertyWebsites/global/Media/All/Hyatt-Green-White-Wedding-Bouquet.jpg",
+    "gridImage4": "http://www.mauchchunkballroom.com/wpballroom/wp-content/uploads/2013/06/wedding-rings-wallpaper1.jpg",
+    "masonryImageTop": "http://theseptemberstandard.com/wp-content/uploads/2015/11/how-to-make-a-wedding-checklist.jpg",
+    "masonryImageLeft": "http://www.diviresorts.com/files/1614/Aruba_Weddings_For_You_(27).jpg",
+    "masonryImageRight": "http://www.doublejj.com/wp-content/uploads/2015/03/white-wedding.jpg",
+    "masonryImageBottom": "http://theseptemberstandard.com/wp-content/uploads/2015/11/how-to-make-a-wedding-checklist.jpg",
+		"featured": false
+  }]
 }

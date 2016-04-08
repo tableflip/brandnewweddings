@@ -8,5 +8,8 @@ module.exports = {
     var start = remainder.splice(0, collectionEntry._index - 1)
     remainder = remainder.concat(start)
     return remainder.slice(0, count)
+  },
+  featured (collection) {
+    return collection.find((entry) => entry.featured)
   }
 }

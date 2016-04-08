@@ -1,0 +1,6 @@
+mixin wedding-card (wedding)
+  a.card.wedding-card(href='./#{wedding._slug}.html')
+    .img-container.card-img-top(style="background-image: url('#{wedding.previewImage}');")
+    .card-block
+      .text-xs-center.text-uppercase.text-muted.card-text=wedding.name
+      .text-xs-center.text-muted.card-text=wedding.description
