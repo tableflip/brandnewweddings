@@ -91,7 +91,7 @@ h2 {
 .row-mosaic {
   @include make-row($grid-gutter-width / 4);
   // For brevity not all columns included here - add if you need
-  .col-xs-4, .col-xs-6, .col-md-6 {
+  .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-md-3, .col-md-6 {
     @include make-col($grid-gutter-width / 4);
   }
 }
@@ -119,3 +119,4 @@ h2 {
 }
 
 @import 'about/about';
+@import 'inspiration/inspiration';
