@@ -1,0 +1,30 @@
+include ../icon
+include ../header
+
+doctype html
+html(lang='en')
+  head
+    include ../head
+    title=content.pageTitle
+  body.page-inspiration
+    +header('Subpages')
+    ul
+      li
+        a(href='./') Subpages home
+      - var prevPage = collections.offset(content._entry, content.subPages, -1)
+      - var nextPage = collections.offset(content._entry, content.subPages, 1)
+      if prevPage
+        li Prev page: 
+          a(href='./' + prevPage._slug + '.html')=prevPage.title
+      if nextPage
+        li Next page: 
+          a(href='./' + nextPage._slug + '.html')=nextPage.title
+    .card.card-block
+      h4.card-title=content._entry.title
+      p.card-text=content._entry.subtitle
+    include ../social
+    include ../exhibit
+    include ../awards
+    include ../footer
+    include ../bundle.svg
+    script(src='#{meta.relativePathToRoot}/bundle.js')

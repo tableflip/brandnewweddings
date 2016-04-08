@@ -48,9 +48,10 @@ find.file(/\index.jade$/, inputDir, (files) => {
       collection.forEach((entry, ind) => {
         entry._slug = slug(entry[subPageMeta.slugFrom])
         entry._index = ind
+        var input = subPageMeta.template ? path.join(task.input, '..', `${subPageMeta.template}.jade`) : task.input
         tasks.push({
           name: `${task.name}/${entry._slug}`,
-          input: task.input,
+          input: input,
           output: path.join(outputDir, task.name, `${entry._slug}.html`),
           content: extend({}, task.content, { _entry: entry }),
           meta: { relativePathToRoot: '..' }

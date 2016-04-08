@@ -8,27 +8,14 @@ html(lang='en')
     title=content.pageTitle
   body.page-inspiration
     +header('Subpages')
-    if content._entry
-      ul
+    ul
+      li
+        a(href='./') Subpages home
+      each subPage in content.subPages
         li
-          a(href='./') Subpages home
-        - var prevPage = collections.offset(content._entry, content.subPages, -1)
-        - var nextPage = collections.offset(content._entry, content.subPages, 1)
-        if prevPage
-          li Prev page: 
-            a(href='./' + prevPage._slug + '.html')=prevPage.title
-        if nextPage
-          li Next page: 
-            a(href='./' + nextPage._slug + '.html')=nextPage.title
-      .card.card-block
-        h4.card-title=content._entry.title
-        p.card-text=content._entry.subtitle
-    else
-      ul
-        li
-          a(href='./') Subpages home
-      .card.card-block
-        p.card-text Please select an item above.
+          a(href='./' + subPage._slug + '.html')=subPage.title
+    .card.card-block
+      p.card-text Please select an item above.
     include ../social
     include ../exhibit
     include ../awards
