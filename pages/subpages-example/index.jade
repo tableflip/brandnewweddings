@@ -10,10 +10,10 @@ html(lang='en')
     +header('Subpages')
     ul
       li
-        a(href='/subpages') Subpages home
+        a(href='./') Subpages home
       each subPage in content.subPages
         li
-          a(href=subPage.path)=subPage.title
+          a(href='./' + subPage.slug + '.html')=subPage.title
     if content.collectionEntry
       .card.card-block
         h4.card-title=content.collectionEntry.title

@@ -1,9 +1,5 @@
 {
 	"pageTitle": "Subpages example",
-	"collection": {
-		"key": "subPages",
-		"slugFrom": "title"
-	},
 	"subPages": [
 		{
 			"title": "Subpage 1",

@@ -9,6 +9,7 @@ var slug = require('slug')
 var extend = require('extend')
 var pathExists = require('path-exists')
 var requireDir = require('require-dir')
+var packageJson = require(path.join(__dirname, '..', 'package'))
 
 var helperPath = path.join(__dirname, '..', 'helpers')
 var helpers = pathExists.sync(helperPath) ? requireDir(helperPath, { camelcase: true }) : {}
@@ -40,12 +41,12 @@ find.file(/\index.jade$/, inputDir, (files) => {
   // add tasks for any collection routes
   tasks
     .forEach((task) => {
-      var collectionMeta = task.content.collection
-      var collection = collectionMeta && task.content[collectionMeta.key]
-      if (!collection) return
+      var subPageMeta = packageJson.subPages[task.name]
+      if (!subPageMeta) return
+      var collection = task.content[subPageMeta.field]
       // Add tasks to build each subpage to the queue
       collection.forEach((entry) => {
-        entry.slug = slug(entry[collectionMeta.slugFrom])
+        entry.slug = slug(entry[subPageMeta.slugFrom])
         entry.path = path.join('/', task.name, `${entry.slug}.html`)
         tasks.push({
           name: `${task.name}/${entry.slug}`,

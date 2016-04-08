@@ -70,5 +70,11 @@
     "svgo": "^0.6.2",
     "svgshelf": "^1.0.3",
     "watchify": "^3.7.0"
+  },
+  "subPages": {
+    "subpages-example": {
+      "field": "subPages",
+      "slugFrom": "title"
+    }
   }
 }
