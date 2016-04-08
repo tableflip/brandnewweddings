@@ -1,1 +1,26 @@
-{}
+{
+  "introText": {
+    "type": "textarea"
+  },
+  "priceListItems": [{
+    "name": {
+      "type": "text",
+      "default": "New item"
+    },
+    "designFee": {
+      "type": "text",
+      "default": "£xxx"
+    },
+    "printCost": {
+      "type": "text",
+      "default": "£xxx"
+    },
+    "notes": {
+      "type": "text",
+      "default": ""
+    }
+  }],
+  "priceListText": {
+    "type": "textarea"
+  }
+}

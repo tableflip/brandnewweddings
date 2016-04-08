@@ -51,6 +51,7 @@
     "jadeify": "^4.6.0",
     "jquery": "^2.2.1",
     "markdown-it": "^6.0.0",
+    "markdown-it-container": "^2.0.0",
     "moment": "^2.12.0",
     "npm-run-all": "^1.2.11",
     "path-exists": "^2.1.0",
