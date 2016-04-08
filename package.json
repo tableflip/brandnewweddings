@@ -60,6 +60,7 @@
     "postcss-cli": "^2.5.1",
     "postcss-import": "^8.1.0",
     "require-dir": "^0.3.0",
+    "slug": "^0.9.1",
     "tether": "^1.2.0"
   },
   "devDependencies": {
@@ -70,5 +71,7 @@
     "svgo": "^0.6.2",
     "svgshelf": "^1.0.3",
     "watchify": "^3.7.0"
+  },
+  "subPages": {
   }
 }
