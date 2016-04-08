@@ -17,7 +17,7 @@ This project uses npm scripts to build the site to the `dist` directory.
 
 ## Helpers
 
-Any module dropped into the *helpers* folder will be passed in the `content` variable to all templates, with the obvious camel-case conversion (i.e. `is-equal` would be available as `content.isEqual`).
+Any module dropped into the *helpers* folder will be passed in the locals to all templates, with the obvious camel-case conversion (i.e. `is-equal` would be available as `isEqual`).
 
 ## Declaring schemas
 
@@ -38,7 +38,7 @@ If validation beyond that which is built in for these fields is required, it can
   "exampleField": {
     "type": "text",
     "validation": {
-      "pattern": "^(https?://)?([0-9a-z.-]+).([a-z.]{2,6})([/[0-9][a-z].-]*)*/?$"  
+      "format": "uri"  
     }
   },  
 }
@@ -49,10 +49,6 @@ Available validation options are as per JSON-schema and can be found [here](http
 ### Regex validation
 
 JSON-schema regex patterns only allow a subset of those available in Javascript - for example, periods will match the period character rather than any character.  Full details can be found under the *pattern* section [here](http://json-schema.org/latest/json-schema-validation.html).
-
-Some useful JSON-schema regex patterns:
-
-**URL** - `^(https?://)?([0-9a-z.-]+).([a-z.]{2,6})([/[0-9][a-z].-]*)*/?$`
 
 ## Defining collections
 
