@@ -155,7 +155,7 @@ a, area, button, [role="button"], input, label, select, summary, textarea { -ms-
 
 table { background-color: transparent; }
 
-caption { padding-top: 0.75rem; padding-bottom: 0.75rem; color: #818a91; text-align: left; caption-side: bottom; }
+caption { padding-top: 0.5rem; padding-bottom: 0.5rem; color: #818a91; text-align: left; caption-side: bottom; }
 
 th { text-align: left; }
 
@@ -177,7 +177,7 @@ output { display: inline-block; }
 
 [hidden] { display: none !important; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 1rem; font-family: inherit; font-weight: 400; line-height: 1.1; color: #7cc7c1; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 1rem; font-family: inherit; font-weight: 400; line-height: 1.1; color: #b980b4; }
 
 h1 { font-size: 1.6rem; }
 
@@ -611,19 +611,19 @@ pre code { padding: 0; font-size: inherit; color: inherit; background-color: tra
 
 .table { width: 100%; max-width: 100%; margin-bottom: 1rem; }
 
-.table th, .table td { padding: 0.75rem; line-height: 1.5; vertical-align: top; border-top: 1px solid #eceeef; }
+.table th, .table td { padding: 0.5rem; line-height: 1.5; vertical-align: top; border-top: 1px solid #b980b4; }
 
-.table thead th { vertical-align: bottom; border-bottom: 2px solid #eceeef; }
+.table thead th { vertical-align: bottom; border-bottom: 2px solid #b980b4; }
 
-.table tbody + tbody { border-top: 2px solid #eceeef; }
+.table tbody + tbody { border-top: 2px solid #b980b4; }
 
 .table .table { background-color: #fff; }
 
 .table-sm th, .table-sm td { padding: 0.3rem; }
 
-.table-bordered { border: 1px solid #eceeef; }
+.table-bordered { border: 1px solid #b980b4; }
 
-.table-bordered th, .table-bordered td { border: 1px solid #eceeef; }
+.table-bordered th, .table-bordered td { border: 1px solid #b980b4; }
 
 .table-bordered thead th, .table-bordered thead td { border-bottom-width: 2px; }
 
@@ -677,15 +677,15 @@ pre code { padding: 0; font-size: inherit; color: inherit; background-color: tra
 
 .table-reflow tbody { display: block; white-space: nowrap; }
 
-.table-reflow th, .table-reflow td { border-top: 1px solid #eceeef; border-left: 1px solid #eceeef; }
+.table-reflow th, .table-reflow td { border-top: 1px solid #b980b4; border-left: 1px solid #b980b4; }
 
-.table-reflow th:last-child, .table-reflow td:last-child { border-right: 1px solid #eceeef; }
+.table-reflow th:last-child, .table-reflow td:last-child { border-right: 1px solid #b980b4; }
 
-.table-reflow thead:last-child tr:last-child th, .table-reflow thead:last-child tr:last-child td, .table-reflow tbody:last-child tr:last-child th, .table-reflow tbody:last-child tr:last-child td, .table-reflow tfoot:last-child tr:last-child th, .table-reflow tfoot:last-child tr:last-child td { border-bottom: 1px solid #eceeef; }
+.table-reflow thead:last-child tr:last-child th, .table-reflow thead:last-child tr:last-child td, .table-reflow tbody:last-child tr:last-child th, .table-reflow tbody:last-child tr:last-child td, .table-reflow tfoot:last-child tr:last-child th, .table-reflow tfoot:last-child tr:last-child td { border-bottom: 1px solid #b980b4; }
 
 .table-reflow tr { float: left; }
 
-.table-reflow tr th, .table-reflow tr td { display: block !important; border: 1px solid #eceeef; }
+.table-reflow tr th, .table-reflow tr td { display: block !important; border: 1px solid #b980b4; }
 
 .form-control { display: block; width: 100%; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; color: #55595c; background-color: #fff; background-image: none; border: 1px solid #ccc; }
 
@@ -2085,7 +2085,9 @@ body { letter-spacing: 1px; }
 
 body > svg { height: 0; }
 
-h1 { letter-spacing: 2px; }
+h1 { color: #7cc7c1; letter-spacing: 2px; }
+
+h2 { letter-spacing: 2px; }
 
 #header { margin-bottom: 1rem; }
 
@@ -2130,6 +2132,10 @@ h1 { letter-spacing: 2px; }
 .row-mosaic::after { content: ""; display: table; clear: both; }
 
 .row-mosaic .col-xs-4, .row-mosaic .col-xs-6, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
+
+.table-bordered-left-right td { border-top: 0; border-bottom: 0; }
+
+.table-bordered-left-right thead th { border-bottom-width: 1px; }
 
 @media (min-width: 992px) { #header .nav-item { width: 16.6%; } }
 
