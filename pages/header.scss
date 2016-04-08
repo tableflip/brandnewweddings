@@ -1,0 +1,38 @@
+#header {
+  margin-bottom: $spacer-y;
+
+  .logo {
+    margin: ($spacer-y * 3) $spacer-x;
+
+    img {
+      margin: 0 auto;
+      width: 585px;
+    }
+  }
+  .navbar {
+    margin: 0 $spacer-x;
+    padding: ($spacer-y * 0.5) 0;
+    border-top: 1px solid $brand-gray-light;
+    border-bottom: 1px solid $brand-gray-light;
+  }
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: $brand-accent;
+  }
+  .nav-item {
+    margin: 0;
+    width: 50%;
+
+    a {
+      display: block;
+      font-family: $headings-font-family;
+      font-size: 1.1rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: $brand-gray;
+
+      &:hover {
+        color: $brand-accent;
+      }
+    }
+  }
+}
