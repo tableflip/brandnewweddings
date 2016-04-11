@@ -1,0 +1,35 @@
+@import '../variables';
+
+.page-real-weddings {
+  .svg-icon-speechbubble-1-gold, .svg-icon-speechbubble-2-gold {
+    svg {
+      width: 80px;
+      height: 55px;
+    }
+  }
+  .svg-icon-speechbubble-2-gold {
+    text-align: right;
+    padding-top: 80px;
+  }
+  .img-container {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    &.high {
+      height: 350px;
+    }
+    &.v-high {
+      height: 450px;
+    }
+  }
+  .wedding-card {
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    .card-block {
+      font-size: 12px;
+      padding: 0.5rem 1.25rem;
+    }
+  }
+}

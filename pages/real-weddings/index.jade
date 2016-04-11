@@ -1,5 +1,6 @@
 include ../icon
 include ../header
+include ./wedding-card
 
 doctype html
 html(lang='en')
@@ -8,6 +9,23 @@ html(lang='en')
     title=content.pageTitle
   body.page-real-weddings
     +header('real-weddings')
+    .strip
+      .container
+        - var featured = collections.featured(content.weddings)
+        if featured
+          .row
+            a(href='./#{featured._slug}.html')
+              img.col-xs-12(src=featured.leadImage)
+              .col-xs-12.m-t-2.m-b-0.text-xs-center
+                .h3.text-primary.text-uppercase Feature of the week
+                h3.m-b-0.text-muted.text-uppercase=featured.name
+    .strip
+      .container
+        h4.text-xs-center.text-uppercase.text-muted.m-y-2 - Real Weddings -
+        .row
+          each wedding in content.weddings
+            .col-sm-6.col-md-4.m-b-0
+              +wedding-card(wedding)
     include ../social
     include ../exhibit
     include ../awards
