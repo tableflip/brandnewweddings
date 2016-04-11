@@ -1,5 +1,5 @@
 var $ = window.$ = window.jQuery = require('jquery')
-require('svg4everybody')()
+require('svg4everybody')({polyfill: true})
 window.Tether = require('tether')
 require('bootstrap')
 if ($('body.page-contact')) require('./contact/contact')

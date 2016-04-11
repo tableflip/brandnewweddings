@@ -1,13 +1,16 @@
 .page-real-weddings {
-  .svg-icon-speechbubble-1-gold, .svg-icon-speechbubble-2-gold {
+  .svg-icon-quote-open, .svg-icon-quote-close {
     svg {
-      width: 80px;
-      height: 55px;
+      width: 40px;
+      height: 30px;
     }
   }
-  .svg-icon-speechbubble-2-gold {
-    text-align: right;
-    padding-top: 80px;
+  .svg-icon-quote-open {
+    margin-left: $spacer-x;
+  }
+  .svg-icon-quote-close {
+    float: right;
+    margin: -6rem $spacer-x 0 0;
   }
 }
 
