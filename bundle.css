@@ -2155,3 +2155,9 @@ h2 { letter-spacing: 2px; }
 
 .page-inspiration .row-mosaic img { margin-bottom: 0.46875rem; }
 
+.page-messages .svg-icon-heart { display: inline-block; }
+
+.page-messages .svg-icon-heart svg { width: 24px; height: 24px; }
+
+.page-messages .strip-message h1 { font-size: 13px; font-family: Montserrat-Light, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; margin-bottom: 0.25rem; }
+
