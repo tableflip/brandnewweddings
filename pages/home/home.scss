@@ -7,4 +7,51 @@
       font-size: 1.25rem;
     }
   }
+
+  // Make carousel fade
+  .carousel-inner {
+    > .carousel-item {
+      transition: 0.6s ease-in-out opacity;
+
+      @media all and (transform-3d), (-webkit-transform-3d) {
+        &.next,
+        &.active.right {
+          transform: translate3d(0, 0, 0);
+        }
+        &.prev,
+        &.active.left {
+          transform: translate3d(0, 0, 0);
+        }
+        &.next.left,
+        &.prev.right,
+        &.active {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+
+    > .active {
+      left: 0;
+      opacity: 1;
+      z-index: 0;
+    }
+    > .next {
+      left: 0;
+      opacity: 1;
+    }
+    > .prev {
+      left: 0;
+      opacity: 1;
+    }
+    > .active.left {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+    > .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
 }
