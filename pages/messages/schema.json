@@ -4,13 +4,16 @@
   },
   "messages": [{
     "title": {
-      "type": "text"
+      "type": "text",
+      "default": "New message"
     },
     "quote": {
-      "type": "textarea"
+      "type": "textarea",
+      "default": ""
     },
     "attribution": {
-      "type": "text"
+      "type": "text",
+      "default": ""
     }
   }]
 }
