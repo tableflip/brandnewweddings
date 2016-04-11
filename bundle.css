@@ -2139,7 +2139,7 @@ h2 { letter-spacing: 2px; }
 
 .row-mosaic::after { content: ""; display: table; clear: both; }
 
-.row-mosaic .col-xs-2, .row-mosaic .col-xs-3, .row-mosaic .col-xs-4, .row-mosaic .col-xs-5, .row-mosaic .col-xs-6, .row-mosaic .col-xs-7, .row-mosaic .col-md-3, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
+.row-mosaic .col-xs-2, .row-mosaic .col-xs-3, .row-mosaic .col-xs-4, .row-mosaic .col-xs-5, .row-mosaic .col-xs-6, .row-mosaic .col-xs-7, .row-mosaic .col-xs-12, .row-mosaic .col-sm-4, .row-mosaic .col-sm-8, .row-mosaic .col-md-3, .row-mosaic .col-md-6 { position: relative; float: left; min-height: 1px; padding-left: 0.23438rem; padding-right: 0.23438rem; }
 
 .table-bordered-left-right td { border-top: 0; border-bottom: 0; }
 
@@ -2160,4 +2160,18 @@ h2 { letter-spacing: 2px; }
 .page-messages .svg-icon-heart svg { width: 24px; height: 24px; }
 
 .page-messages .strip-message h1 { font-size: 13px; font-family: Montserrat-Light, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; margin-bottom: 0.25rem; }
+
+.page-real-weddings .svg-icon-speechbubble-1-gold svg, .page-real-weddings .svg-icon-speechbubble-2-gold svg { width: 80px; height: 55px; }
+
+.page-real-weddings .svg-icon-speechbubble-2-gold { text-align: right; padding-top: 80px; }
+
+.page-real-weddings .img-container { height: 250px; background-size: cover; background-position: center; width: 100%; }
+
+.page-real-weddings .img-container.high { height: 350px; }
+
+.page-real-weddings .img-container.v-high { height: 450px; }
+
+.page-real-weddings .wedding-card { text-decoration: none; border: none; border-bottom: 1px solid lightgray; }
+
+.page-real-weddings .wedding-card .card-block { font-size: 12px; padding: 0.5rem 1.25rem; }
 
