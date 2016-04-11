@@ -2,22 +2,23 @@ extends ../layout
 include ../icon
 
 block main
-  .strip
-    .container
-      .row
-        .col-lg-offset-1.col-lg-10.text-xs-center
-          +icon('heart')
-          .text-uppercase.text-primary
-            !=md.render(content.introText)
-  each message in content.messages
-    .section.strip.strip-message
+  main
+    .strip
       .container
         .row
           .col-lg-offset-1.col-lg-10.text-xs-center
-            h1.text-uppercase
-              if message.link
-                a(href=message.link).text-primary=message.title
-              else
-                =message.title
-            blockquote=message.quote
-            p.font-weight-bold.font-italic=message.quoteFrom
+            +icon('heart')
+            .text-uppercase.text-primary
+              !=md.render(content.introText)
+    each message in content.messages
+      .section.strip.strip-message
+        .container
+          .row
+            .col-lg-offset-1.col-lg-10.text-xs-center
+              h1.text-uppercase
+                if message.link
+                  a(href=message.link).text-primary=message.title
+                else
+                  =message.title
+              blockquote=message.quote
+              p.font-weight-bold.font-italic=message.quoteFrom

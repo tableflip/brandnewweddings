@@ -1,133 +1,134 @@
 extends ../layout
 
 block main
-  .strip.not-sent
-    .container
-      .row
-        .col-lg-offset-1.col-lg-10
-          .text-xs-center
-            h1.text-uppercase=content.introTitle
-            !=md.render(content.introText)
-          form(action='https://post.tableflip.io/brandnewweddings.co.uk' method='POST')
-            .form-group
-              label(for='contact-name').sr-only Name/s (required)
-              input.form-control(id='contact-name' name='name' placeholder='Name/s (required)' required)
-            .form-group
-              label(for='contact-email').sr-only Email (required)
-              input.form-control(id='contact-email' name='email' type='email' placeholder='Email (required)' required)
-            .form-group
-              label(for='contact-date').sr-only Wedding Date (if known)
-              input.form-control(id='contact-date' name='date' placeholder='Wedding Date (if known)')
-            .form-group
-              label(for='contact-venue').sr-only Venue/s (if known)
-              input.form-control(id='contact-venue' name='venue' placeholder='Venue/s (if known)')
-            .form-group
-              label(for='contact-guests').sr-only Number of guests (approx)
-              input.form-control(id='contact-guests' name='guests' type='number' placeholder='Number of guests (approx)' min=0 step=1)
-            .row.m-t-2.m-b-1
-              .col-xs-12.col-md-6
-                p.p-l-2 Are you based in the UK? (required)
-              .col-xs-6.col-md-3
-                .radio
-                  label.radio-inline.text-uppercase
-                    input.m-l-1.m-r-1(name='based' type='radio' value='UK' checked)
-                    |  Yes
-              .col-xs-6.col-md-3
-                .radio
-                  label.radio-inline.text-uppercase
-                    input.m-l-1.m-r-1(name='based' type='radio' value='Other')
-                    |  No
-            .form-group
-              label(for='contact-about').sr-only A little bit about your day...
-              textarea.form-control(id='contact-about' placeholder='A little bit about your day...' rows=6)
-            .form-group
-              p.p-l-2 Check the boxes of items you are interested in...
-              .row
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Save the Date')
-                      |  Save the Date
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Invitations')
-                      |  Invitations
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Table Plan')
-                      |  Table Plan
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Table Names')
-                      |  Table Names
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Place Names')
-                      |  Place Names
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Order of Service')
-                      |  Order of Service
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Menu\'s')
-                      |  Menu's
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Favour Detailing')
-                      |  Favour Detailing
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='On the Day Signage')
-                      |  On the Day Signage
-                .col-sm-6.col-md-4
-                  .checkbox
-                    label.checkbox-inline
-                      input.m-r-1(name='interests' type='checkbox' value='Other')
-                      |  Other (please specify below)
-                .col-xs-12
-                  label(for='contact-other').sr-only Other
-                  input.form-control(id='contact-other' name='other')
-            .form-group
-              label(for='contact-notes').sr-only Additional Notes...
-              textarea.form-control(id='contact-notes' placeholder='Additional Notes...' rows=6)
-            .form-group.text-xs-center
-              input.btn.btn-primary.btn-lg(type='submit' value='SUBMIT')
-  .strip.sent-true
-    .container
-      .row
-        .col-lg-offset-1.col-lg-10
-          .text-xs-center
-            h1.text-uppercase=content.thankYouTitle
-            !=md.render(content.thankYouText)
-  .strip.sent-false
-    .container
-      .row
-        .col-lg-offset-1.col-lg-10
-          .text-xs-center
-            h1.text-uppercase.text-danger Sorry, something went wrong...
-            p.lead Please email us directly at #[a(href='mailto:freya@thebrandnewstudio.com') freya@thebrandnewstudio.com]
-  .strip
-    .container
-      .row
-        .col-lg-offset-1.col-lg-10
-          .text-xs-center
-            h1.text-uppercase - Other Contact Details -
-            p
-              small Our postal address:
-              br
-              =content.otherContactPostal
-            p
-              small Phone:
-              br
-              a(href='tel:#{content.otherContactPhone}')=content.otherContactPhone
-            .text-accent.text-uppercase
-              !=md.render(content.otherContactText)
+  main
+    .strip.not-sent
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10
+            .text-xs-center
+              h1.text-uppercase=content.introTitle
+              !=md.render(content.introText)
+            form(action='https://post.tableflip.io/brandnewweddings.co.uk' method='POST')
+              .form-group
+                label(for='contact-name').sr-only Name/s (required)
+                input.form-control(id='contact-name' name='name' placeholder='Name/s (required)' required)
+              .form-group
+                label(for='contact-email').sr-only Email (required)
+                input.form-control(id='contact-email' name='email' type='email' placeholder='Email (required)' required)
+              .form-group
+                label(for='contact-date').sr-only Wedding Date (if known)
+                input.form-control(id='contact-date' name='date' placeholder='Wedding Date (if known)')
+              .form-group
+                label(for='contact-venue').sr-only Venue/s (if known)
+                input.form-control(id='contact-venue' name='venue' placeholder='Venue/s (if known)')
+              .form-group
+                label(for='contact-guests').sr-only Number of guests (approx)
+                input.form-control(id='contact-guests' name='guests' type='number' placeholder='Number of guests (approx)' min=0 step=1)
+              .row.m-t-2.m-b-1
+                .col-xs-12.col-md-6
+                  p.p-l-2 Are you based in the UK? (required)
+                .col-xs-6.col-md-3
+                  .radio
+                    label.radio-inline.text-uppercase
+                      input.m-l-1.m-r-1(name='based' type='radio' value='UK' checked)
+                      |  Yes
+                .col-xs-6.col-md-3
+                  .radio
+                    label.radio-inline.text-uppercase
+                      input.m-l-1.m-r-1(name='based' type='radio' value='Other')
+                      |  No
+              .form-group
+                label(for='contact-about').sr-only A little bit about your day...
+                textarea.form-control(id='contact-about' placeholder='A little bit about your day...' rows=6)
+              .form-group
+                p.p-l-2 Check the boxes of items you are interested in...
+                .row
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Save the Date')
+                        |  Save the Date
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Invitations')
+                        |  Invitations
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Table Plan')
+                        |  Table Plan
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Table Names')
+                        |  Table Names
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Place Names')
+                        |  Place Names
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Order of Service')
+                        |  Order of Service
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Menu\'s')
+                        |  Menu's
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Favour Detailing')
+                        |  Favour Detailing
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='On the Day Signage')
+                        |  On the Day Signage
+                  .col-sm-6.col-md-4
+                    .checkbox
+                      label.checkbox-inline
+                        input.m-r-1(name='interests' type='checkbox' value='Other')
+                        |  Other (please specify below)
+                  .col-xs-12
+                    label(for='contact-other').sr-only Other
+                    input.form-control(id='contact-other' name='other')
+              .form-group
+                label(for='contact-notes').sr-only Additional Notes...
+                textarea.form-control(id='contact-notes' placeholder='Additional Notes...' rows=6)
+              .form-group.text-xs-center
+                input.btn.btn-primary.btn-lg(type='submit' value='SUBMIT')
+    .strip.sent-true
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10
+            .text-xs-center
+              h1.text-uppercase=content.thankYouTitle
+              !=md.render(content.thankYouText)
+    .strip.sent-false
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10
+            .text-xs-center
+              h1.text-uppercase.text-danger Sorry, something went wrong...
+              p.lead Please email us directly at #[a(href='mailto:freya@thebrandnewstudio.com') freya@thebrandnewstudio.com]
+    .strip
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10
+            .text-xs-center
+              h1.text-uppercase - Other Contact Details -
+              p
+                small Our postal address:
+                br
+                =content.otherContactPostal
+              p
+                small Phone:
+                br
+                a(href='tel:#{content.otherContactPhone}')=content.otherContactPhone
+              .text-accent.text-uppercase
+                !=md.render(content.otherContactText)
