@@ -1,0 +1,19 @@
+include header
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    link(rel='stylesheet' href='#{meta.relativePathToRoot}/bundle.css')
+    title=content.pageTitle || 'Br&new Weddings'
+  body(class='page-#{meta.name}')
+    +header(meta.name)
+    block main
+    block asides
+      include social
+      include exhibit
+      include awards
+    include footer
+    script(src='#{meta.relativePathToRoot}/bundle.js')

@@ -22,17 +22,19 @@ find.file(/\index.jade$/, inputDir, (files) => {
   var tasks = files.map((tpl) => {
     var name = path.dirname(path.relative(inputDir, tpl))
     return {
-      name: name,
       input: tpl,
       output: path.join(outputDir, name, 'index.html'),
       content: require(path.join(path.dirname(tpl), 'content.json')),
-      meta: { relativePathToRoot: '..' }
+      meta: {
+        name: name,
+        relativePathToRoot: '..'
+      }
     }
   })
 
   // shift output of home
   tasks
-    .filter((task) => task.name === 'home')
+    .filter((task) => task.meta.name === 'home')
     .forEach((task) => {
       task.output = path.join(outputDir, 'index.html')
       task.meta.relativePathToRoot = '.'
@@ -41,7 +43,7 @@ find.file(/\index.jade$/, inputDir, (files) => {
   // add tasks for any collection routes
   tasks
     .forEach((task) => {
-      var subPageMeta = packageSubPages[task.name]
+      var subPageMeta = packageSubPages[task.meta.name]
       if (!subPageMeta) return
       var collection = task.content[subPageMeta.field]
       // Add tasks to build each subpage to the queue
@@ -50,11 +52,13 @@ find.file(/\index.jade$/, inputDir, (files) => {
         entry._index = ind
         var input = subPageMeta.template ? path.join(task.input, '..', `${subPageMeta.template}.jade`) : task.input
         tasks.push({
-          name: `${task.name}/${entry._slug}`,
           input: input,
-          output: path.join(outputDir, task.name, `${entry._slug}.html`),
+          output: path.join(outputDir, task.meta.name, `${entry._slug}.html`),
           content: extend({}, task.content, { _entry: entry }),
-          meta: { relativePathToRoot: '..' }
+          meta: {
+            name: `${task.name}/${entry._slug}`,
+            relativePathToRoot: '..'
+          }
         })
       })
     })

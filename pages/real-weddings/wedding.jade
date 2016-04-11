@@ -1,81 +1,69 @@
+extends ../layout
+include wedding-card
 include ../icon
-include ../header
-include ./wedding-card
 
-doctype html
-html(lang='en')
-  head
-    include ../head
-    title=content.pageTitle
-  body.page-real-weddings
-    +header('real-weddings')
-    .strip
-      .container
-        .row
-          img.col-xs-12(src=content._entry.leadImage)
-          .col-xs-12.m-t-2.m-b-0
-            h1.text-xs-center.text-uppercase=content._entry.couple
-            h3.text-xs-center.text-uppercase.text-muted.m-b-0=content._entry.description
-    .strip
-      .container
-        .row.m-b-2
-          .col-xs-12.col-md-10.col-md-offset-1.text-xs-center
-            !=md.render(content._entry.blurb)
-        .row-mosaic
-          .col-md-6.m-b-1
-            .img-container.high(style="background-image: url('#{content._entry.gridImage1}')")
-          .col-md-6.m-b-1
-            .img-container.high(style="background-image: url('#{content._entry.gridImage2}')")
-          .col-md-6.m-b-1
-            .img-container.high(style="background-image: url('#{content._entry.gridImage3}')")
-          .col-md-6.m-b-1
-            .img-container.high(style="background-image: url('#{content._entry.gridImage4}')")
-        .row.m-y-3
-          .col-sm-1.col-md-2.hidden-xs-down
-            +icon('speechbubble-1-gold')
-          .col-sm-10.col-md-8.p-y-3
-            p.text-xs-center=content._entry.quote
-            h4.text-xs-center.text-primary.m-b-0=content._entry.quoteFrom
-          .col-sm-1.col-md-2.hidden-xs-down
-            +icon('speechbubble-2-gold')
-        .row-mosaic
-          .col-xs-12.m-b-1
-            .img-container.v-high(style="background-image: url('#{content._entry.masonryImageTop}');")
-          .col-sm-4.col-md-3.hidden-xs-down.m-b-1
-            .img-container.high(style="background-image: url('#{content._entry.masonryImageLeft}');")
-          .col-sm-8.col-md-9.hidden-xs-down.m-b-1
-            .img-container.high(style="background-image: url('#{content._entry.masonryImageRight}');")            
-          .col-xs-12.m-b-1
-            .img-container.v-high(style="background-image: url('#{content._entry.masonryImageBottom}');")
-    .strip
-      .container
-        h2.text-xs-center.text-uppercase.text-primary.m-b-2 - Suppliers - 
-        .row
-          .col-sm-10.col-md-8.col-sm-offset-1.col-md-offset-2
-            each supplier in content._entry.suppliers
-              p.text-xs-center=supplier
-    .strip
-      .container
-        - var next = collections.offset(content._entry, content.weddings, 1)
-        - var prev = collections.offset(content._entry, content.weddings, -1)
-        .row.m-b-1
-          .col-sm-3.hidden-xs-down
-            a(href=prev && './#{prev._slug}.html').h4.text-uppercase.text-muted &lt; Previous
-          .col-xs-12.col-sm-6
-            h2.text-xs-center.text-uppercase.text-primary - More real weddings - 
-          .col-sm-3.text-xs-right.hidden-xs-down        
-            a(href=next && './#{next._slug}.html').h4.text-uppercase.text-muted Next &gt;
-          .col-xs-6.hidden-sm-up
-            a(href=prev && './#{prev._slug}.html').h4.text-uppercase.text-muted &lt; Previous
-          .col-xs-6.text-xs-right.hidden-sm-up
-            a(href=next && './#{next._slug}.html').h4.text-uppercase.text-muted Next &gt;
-        .row
-          each wedding in collections.others(content._entry, content.weddings, 3)
-            .col-sm-6.col-md-4
-              +wedding-card(wedding)
-    include ../social
-    include ../exhibit
-    include ../awards
-    include ../footer
-    include ../bundle.svg
-    script(src='#{meta.relativePathToRoot}/bundle.js')
+block main
+  .strip
+    .container
+      .row
+        img.col-xs-12(src=content._entry.leadImage)
+        .col-xs-12.m-t-2.m-b-0
+          h1.text-xs-center.text-uppercase=content._entry.couple
+          h3.text-xs-center.text-uppercase.text-muted.m-b-0=content._entry.description
+  .strip
+    .container
+      .row.m-b-2
+        .col-xs-12.col-md-10.col-md-offset-1.text-xs-center
+          !=md.render(content._entry.blurb)
+      .row-mosaic
+        .col-md-6.m-b-1
+          .img-container.high(style="background-image: url('#{content._entry.gridImage1}')")
+        .col-md-6.m-b-1
+          .img-container.high(style="background-image: url('#{content._entry.gridImage2}')")
+        .col-md-6.m-b-1
+          .img-container.high(style="background-image: url('#{content._entry.gridImage3}')")
+        .col-md-6.m-b-1
+          .img-container.high(style="background-image: url('#{content._entry.gridImage4}')")
+      .row.m-y-3
+        .col-sm-1.col-md-2.hidden-xs-down
+          +icon('speechbubble-1-gold')
+        .col-sm-10.col-md-8.p-y-3
+          p.text-xs-center=content._entry.quote
+          h4.text-xs-center.text-primary.m-b-0=content._entry.quoteFrom
+        .col-sm-1.col-md-2.hidden-xs-down
+          +icon('speechbubble-2-gold')
+      .row-mosaic
+        .col-xs-12.m-b-1
+          .img-container.v-high(style="background-image: url('#{content._entry.masonryImageTop}');")
+        .col-sm-4.col-md-3.hidden-xs-down.m-b-1
+          .img-container.high(style="background-image: url('#{content._entry.masonryImageLeft}');")
+        .col-sm-8.col-md-9.hidden-xs-down.m-b-1
+          .img-container.high(style="background-image: url('#{content._entry.masonryImageRight}');")            
+        .col-xs-12.m-b-1
+          .img-container.v-high(style="background-image: url('#{content._entry.masonryImageBottom}');")
+  .strip
+    .container
+      h2.text-xs-center.text-uppercase.text-primary.m-b-2 - Suppliers - 
+      .row
+        .col-sm-10.col-md-8.col-sm-offset-1.col-md-offset-2
+          each supplier in content._entry.suppliers
+            p.text-xs-center=supplier
+  .strip
+    .container
+      - var next = collections.offset(content._entry, content.weddings, 1)
+      - var prev = collections.offset(content._entry, content.weddings, -1)
+      .row.m-b-1
+        .col-sm-3.hidden-xs-down
+          a(href=prev && './#{prev._slug}.html').h4.text-uppercase.text-muted &lt; Previous
+        .col-xs-12.col-sm-6
+          h2.text-xs-center.text-uppercase.text-primary - More real weddings - 
+        .col-sm-3.text-xs-right.hidden-xs-down        
+          a(href=next && './#{next._slug}.html').h4.text-uppercase.text-muted Next &gt;
+        .col-xs-6.hidden-sm-up
+          a(href=prev && './#{prev._slug}.html').h4.text-uppercase.text-muted &lt; Previous
+        .col-xs-6.text-xs-right.hidden-sm-up
+          a(href=next && './#{next._slug}.html').h4.text-uppercase.text-muted Next &gt;
+      .row
+        each wedding in collections.others(content._entry, content.weddings, 3)
+          .col-sm-6.col-md-4
+            +wedding-card(wedding)

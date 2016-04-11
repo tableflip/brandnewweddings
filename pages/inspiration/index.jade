@@ -1,55 +1,42 @@
-include ../icon
-include ../header
+extends ../layout
 
-doctype html
-html(lang='en')
-  head
-    include ../head
-    title=content.pageTitle
-  body.page-inspiration
-    +header('inspiration')
-    section.strip
-      .container.text-xs-center
-        .row.row-mosaic
-          .col-xs-5
-            img.img-fluid(src='#{content.introImage1}-/format/jpeg/-/scale_crop/920x510/center/-/quality/lighter/')
-          .col-xs-2
-            img.img-fluid(src='#{content.introImage2}-/format/jpeg/-/scale_crop/360x510/center/-/quality/lighter/')
-          .col-xs-3
-            img.img-fluid(src='#{content.introImage3}-/format/jpeg/-/scale_crop/548x510/center/-/quality/lighter/')
-          .col-xs-2
-            img.img-fluid(src='#{content.introImage4}-/format/jpeg/-/scale_crop/360x510/center/-/quality/lighter/')
-        .row.row-mosaic.m-b-2
-          .col-xs-6.col-md-3
-            img.img-fluid(src='#{content.introImage5}-/format/jpeg/-/scale_crop/548x1020/center/-/quality/lighter/')
-          .col-xs-6.col-md-3.col-md-push-6
-            img.img-fluid(src='#{content.introImage10}-/format/jpeg/-/scale_crop/548x1020/center/-/quality/lighter/')
-          .col-xs-12.col-md-6.col-md-pull-3
-            .row.row-mosaic
-              .col-xs-7
-                img.img-fluid(src='#{content.introImage6}-/format/jpeg/-/scale_crop/642x500/center/-/quality/lighter/')
-              .col-xs-5
-                img.img-fluid(src='#{content.introImage7}-/format/jpeg/-/scale_crop/456x500/center/-/quality/lighter/')
-            .row.row-mosaic
-              .col-xs-5
-                img.img-fluid(src='#{content.introImage8}-/format/jpeg/-/scale_crop/456x510/center/-/quality/lighter/')
-              .col-xs-7
-                img.img-fluid(src='#{content.introImage9}-/format/jpeg/-/scale_crop/642x510/center/-/quality/lighter/')
-          
-        .row
-          .col-lg-offset-1.col-lg-10
-            h1.text-uppercase=content.introTitle
-            !=md.render(content.introText)
-    section.strip
-      .container
-        .row
-          .col-lg-offset-1.col-lg-10.text-xs-center
-            h1.text-uppercase - Instagram -
-            script(src='//lightwidget.com/widgets/lightwidget.js')
-            iframe(src='//lightwidget.com/widgets/ad572eb5ef935bab9eb84b4aefdd127e.html' id='lightwidget_ad572eb5ef' name='lightwidget_ad572eb5ef'  scrolling='no' allowtransparency='true' class='lightwidget-widget' style='width: 100%; border: 0; overflow: hidden;')
-    include ../social
-    include ../exhibit
-    include ../awards
-    include ../footer
-    include ../bundle.svg
-    script(src='#{meta.relativePathToRoot}/bundle.js')
+block main
+  .strip
+    .container.text-xs-center
+      .row.row-mosaic
+        .col-xs-5
+          img.img-fluid(src='#{content.introImage1}-/format/jpeg/-/scale_crop/920x510/center/-/quality/lighter/')
+        .col-xs-2
+          img.img-fluid(src='#{content.introImage2}-/format/jpeg/-/scale_crop/360x510/center/-/quality/lighter/')
+        .col-xs-3
+          img.img-fluid(src='#{content.introImage3}-/format/jpeg/-/scale_crop/548x510/center/-/quality/lighter/')
+        .col-xs-2
+          img.img-fluid(src='#{content.introImage4}-/format/jpeg/-/scale_crop/360x510/center/-/quality/lighter/')
+      .row.row-mosaic.m-b-2
+        .col-xs-6.col-md-3
+          img.img-fluid(src='#{content.introImage5}-/format/jpeg/-/scale_crop/548x1020/center/-/quality/lighter/')
+        .col-xs-6.col-md-3.col-md-push-6
+          img.img-fluid(src='#{content.introImage10}-/format/jpeg/-/scale_crop/548x1020/center/-/quality/lighter/')
+        .col-xs-12.col-md-6.col-md-pull-3
+          .row.row-mosaic
+            .col-xs-7
+              img.img-fluid(src='#{content.introImage6}-/format/jpeg/-/scale_crop/642x500/center/-/quality/lighter/')
+            .col-xs-5
+              img.img-fluid(src='#{content.introImage7}-/format/jpeg/-/scale_crop/456x500/center/-/quality/lighter/')
+          .row.row-mosaic
+            .col-xs-5
+              img.img-fluid(src='#{content.introImage8}-/format/jpeg/-/scale_crop/456x510/center/-/quality/lighter/')
+            .col-xs-7
+              img.img-fluid(src='#{content.introImage9}-/format/jpeg/-/scale_crop/642x510/center/-/quality/lighter/')
+        
+      .row
+        .col-lg-offset-1.col-lg-10
+          h1.text-uppercase=content.introTitle
+          !=md.render(content.introText)
+  .strip
+    .container
+      .row
+        .col-lg-offset-1.col-lg-10.text-xs-center
+          h1.text-uppercase - Instagram -
+          script(src='//lightwidget.com/widgets/lightwidget.js')
+          iframe(src='//lightwidget.com/widgets/ad572eb5ef935bab9eb84b4aefdd127e.html' id='lightwidget_ad572eb5ef' name='lightwidget_ad572eb5ef'  scrolling='no' allowtransparency='true' class='lightwidget-widget' style='width: 100%; border: 0; overflow: hidden;')

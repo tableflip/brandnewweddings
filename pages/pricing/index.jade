@@ -1,60 +1,46 @@
-include ../icon
-include ../header
+extends ../layout
 
-doctype html
-html(lang='en')
-  head
-    include ../head
-    title=content.pageTitle
-  body.page-pricing
-    +header('pricing')
-    main
-      section.strip
-        .container.text-xs-center
-          .row
-            .col-lg-offset-1.col-lg-10
-              h1.text-uppercase=content.introTitle
-              !=md.render(content.introText)
-      section.strip
-        .container
-          h1.h2.text-xs-center.text-uppercase=content.priceListTitle
-          table.table.table-striped.table-bordered.table-bordered-left-right.m-t-2.m-b-2
-            colgroup
-              col
-              col(width="17%")
-              col(width="17%")
-              col
-            thead
+block main
+  main
+    .strip
+      .container.text-xs-center
+        .row
+          .col-lg-offset-1.col-lg-10
+            h1.text-uppercase=content.introTitle
+            !=md.render(content.introText)
+    .strip
+      .container
+        h1.h2.text-xs-center.text-uppercase=content.priceListTitle
+        table.table.table-striped.table-bordered.table-bordered-left-right.m-t-2.m-b-2
+          colgroup
+            col
+            col(width="17%")
+            col(width="17%")
+            col
+          thead
+            tr
+              th.text-uppercase.text-accent.font-weight-normal
+                | Item
+              th.text-xs-center.text-uppercase.text-accent.font-weight-normal
+                | Design fee
+              th.text-xs-center.text-accent.font-weight-normal
+                span.text-uppercase Print / Material Cost
+                |  (Guideline)
+              th.text-uppercase.text-accent.font-weight-normal
+                | Notes
+          tbody
+            tr
+              td
+              td
+              td.text-xs-center
+                small (All costs based on x100)
+              td
+                small (Example only)
+            each item in content.priceListItems
               tr
-                th.text-uppercase.text-accent.font-weight-normal
-                  | Item
-                th.text-xs-center.text-uppercase.text-accent.font-weight-normal
-                  | Design fee
-                th.text-xs-center.text-accent.font-weight-normal
-                  span.text-uppercase Print / Material Cost
-                  |  (Guideline)
-                th.text-uppercase.text-accent.font-weight-normal
-                  | Notes
-            tbody
-              tr
-                td
-                td
-                td.text-xs-center
-                  small (All costs based on x100)
-                td
-                  small (Example only)
-              each item in content.priceListItems
-                tr
-                  td.text-uppercase=item.name
-                  td.text-xs-center=item.designFee
-                  td.text-xs-center=item.printCost
-                  td=item.notes
-          .text-xs-center
-            !=md.render(content.priceListText)
-                
-    include ../social
-    include ../exhibit
-    include ../awards
-    include ../footer
-    include ../bundle.svg
-    script(src='#{meta.relativePathToRoot}/bundle.js')
+                td.text-uppercase=item.name
+                td.text-xs-center=item.designFee
+                td.text-xs-center=item.printCost
+                td=item.notes
+        .text-xs-center
+          !=md.render(content.priceListText)

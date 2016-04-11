@@ -1,4 +1,4 @@
 node_modules
+npm-debug*
 .sass-cache
 dist
-pages/bundle.svg

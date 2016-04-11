@@ -1,5 +1,3 @@
-@import '../variables';
-
 .page-real-weddings {
   .svg-icon-speechbubble-1-gold, .svg-icon-speechbubble-2-gold {
     svg {
@@ -26,7 +24,7 @@
   .wedding-card {
     text-decoration: none;
     border: none;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $brand-gray;
     .card-block {
       font-size: 12px;
       padding: 0.5rem 1.25rem;

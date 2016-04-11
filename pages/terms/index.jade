@@ -1,19 +1,11 @@
-include ../icon
-include ../header
+extends ../layout
 
-doctype html
-html(lang='en')
-  head
-    include ../head
-    title=content.pageTitle
-  body.page-terms
-    +header('terms')
-    main
-      section.strip
-        .container
-          .row
-            .col-lg-offset-1.col-lg-10
-              !=md.render(content.text)
-    include ../footer
-    include ../bundle.svg
-    script(src='#{meta.relativePathToRoot}/bundle.js')
+block main
+  main
+    .strip
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10
+            !=md.render(content.text)
+
+block asides
