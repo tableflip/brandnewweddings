@@ -3,6 +3,7 @@ var md = require('markdown-it')({
   breaks: true,
   linkify: true
 })
+.use(require('markdown-it-container'), 'text-primary')
 .use(require('markdown-it-container'), 'text-accent')
 
 module.exports = md

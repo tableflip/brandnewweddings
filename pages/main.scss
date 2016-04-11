@@ -10,6 +10,7 @@
 // See `node_modules/bootstrap/scss/_variables.scss` for more options
 @import 'variables';
 @import 'bootstrap/scss/bootstrap';
+@import 'fonts';
 
 body {
   letter-spacing: 1px;
@@ -25,54 +26,19 @@ h2 {
   letter-spacing: 2px;
 }
 
-#header {
-  margin-bottom: $spacer-y;
-
-  .logo {
-    margin: ($spacer-y * 3) $spacer-x;
-
-    img {
-      margin: 0 auto;
-      width: 585px;
-    }
-  }
-  .navbar {
-    margin: 0 $spacer-x;
-    padding: ($spacer-y * 0.5) 0;
-    border-top: 1px solid $brand-gray-light;
-    border-bottom: 1px solid $brand-gray-light;
-  }
-  .navbar-light .navbar-nav .active > .nav-link {
-    color: $brand-accent;
-  }
-  .nav-item {
-    margin: 0;
-    width: 50%;
-
-    a {
-      display: block;
-      text-align: center;
-      text-transform: uppercase;
-      color: $brand-gray;
-
-      &:hover {
-        color: $brand-accent;
-      }
-    }
-  }
-}
-
+@import 'header';
 @import 'social';
 @import 'exhibit';
 @import 'awards';
-@import 'real-weddings/real-weddings';
+@import 'footer';
 
-#footer {
-  text-align: center;
-  padding: $spacer-y 0;
-  color: $brand-gray-light;
+.btn {
+  font-family: $headings-font-family;
+  letter-spacing: 1px;
 }
-
+.table {
+  font-size: 1.1em;
+}
 .text-accent {
   color: $brand-accent;
 }
@@ -90,7 +56,7 @@ h2 {
 .row-mosaic {
   @include make-row($grid-gutter-width / 4);
   // For brevity not all columns included here - add if you need
-  .col-xs-4, .col-xs-6, .col-xs-12, .col-sm-4, .col-sm-8, .col-md-6 {
+  .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-12, .col-sm-4, .col-sm-8, .col-md-3, .col-md-6 {
     @include make-col($grid-gutter-width / 4);
   }
 }
@@ -101,8 +67,12 @@ h2 {
     border-bottom: 0;
   }
   thead th {
+    vertical-align: middle;
     border-bottom-width: 1px;
   }
+}
+.checkbox, .radio {
+  margin-bottom: $spacer-y;
 }
 
 @include media-breakpoint-up(lg) {
@@ -114,3 +84,6 @@ h2 {
 }
 
 @import 'about/about';
+@import 'inspiration/inspiration';
+@import 'messages/messages';
+@import 'real-weddings/real-weddings';

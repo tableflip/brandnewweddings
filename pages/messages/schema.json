@@ -1,1 +1,16 @@
-{}
+{
+  "introText": {
+    "type": "textarea"
+  },
+  "messages": [{
+    "title": {
+      "type": "text"
+    },
+    "quote": {
+      "type": "textarea"
+    },
+    "attribution": {
+      "type": "text"
+    }
+  }]
+}
