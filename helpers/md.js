@@ -5,5 +5,6 @@ var md = require('markdown-it')({
 })
 .use(require('markdown-it-container'), 'text-primary')
 .use(require('markdown-it-container'), 'text-accent')
+.use(require('markdown-it-container'), 'lead')
 
 module.exports = md

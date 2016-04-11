@@ -1,4 +1,5 @@
-window.$ = window.jQuery = require('jquery')
+var $ = window.$ = window.jQuery = require('jquery')
 require('svg4everybody')()
 window.Tether = require('tether')
 require('bootstrap')
+if ($('body.page-contact')) require('./contact/contact')

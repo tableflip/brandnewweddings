@@ -1,0 +1,20 @@
+.page-contact {
+  .sent-true, .sent-false {
+    display: none;
+  }
+  &.sent-true, &.sent-false {
+    .not-sent {
+      display: none;
+    }
+  }
+  &.sent-true {
+    .sent-true {
+      display: block;
+    }
+  }
+  &.sent-false {
+    .sent-false {
+      display: block;
+    }
+  }
+}

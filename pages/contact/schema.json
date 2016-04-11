@@ -1,5 +1,8 @@
 {
   "introText": {
     "type": "textarea"
+  },
+  "thankYouText": {
+    "type": "textarea"
   }
 }

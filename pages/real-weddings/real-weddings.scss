@@ -9,25 +9,44 @@
     text-align: right;
     padding-top: 80px;
   }
-  .img-container {
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    &.high {
-      height: 350px;
-    }
-    &.v-high {
-      height: 450px;
+}
+
+.img-container {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-bottom: $grid-gutter-width / 4;
+
+  &.high {
+    height: 350px;
+  }
+  &.v-high {
+    height: 450px;
+  }
+}
+.wedding-card {
+  border: none;
+  border-bottom: 1px solid $brand-gray-light;
+
+  &:hover {
+    text-decoration: none;
+
+    .card-text {
+      color: $brand-accent;
     }
   }
-  .wedding-card {
-    text-decoration: none;
-    border: none;
-    border-bottom: 1px solid $brand-gray;
-    .card-block {
-      font-size: 12px;
-      padding: 0.5rem 1.25rem;
-    }
+  .img-container {
+    margin-bottom: 0;
+  }
+  .card-block {
+    font-family: $headings-font-family;
+    padding: 0.5rem 1.25rem;
+  }
+  .card-text {
+    color: $brand-gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

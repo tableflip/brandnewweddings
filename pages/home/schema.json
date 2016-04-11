@@ -12,5 +12,8 @@
       "type": "text",
       "default": "http://example.com"
     }
-  }]
+  }],
+  "aboutText": {
+    "type": "textarea"
+  }
 }

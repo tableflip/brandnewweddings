@@ -1,6 +1,6 @@
 mixin wedding-card (wedding)
-  a.card.wedding-card(href='./#{wedding._slug}.html')
-    .img-container.card-img-top(style="background-image: url('#{wedding.previewImage}');")
+  a.card.wedding-card(href='#{meta.relativePathToRoot}/real-weddings/#{wedding._slug}.html')
+    .img-container(style="background-image: url('#{uc(wedding.previewImage, '-/format/jpeg/-/scale_crop/714x500/center/-/quality/lighter/')}');")
     .card-block
-      .text-xs-center.text-uppercase.text-muted.card-text=wedding.name
-      .text-xs-center.text-muted.card-text=wedding.description
+      .text-xs-center.text-uppercase.card-text=wedding.name
+      .text-xs-center.card-text=wedding.description

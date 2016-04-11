@@ -2,22 +2,21 @@ extends ../layout
 include wedding-card
 
 block main
-  .strip
-    .container
-      - var featured = collections.featured(content.weddings)
-      if featured
+  main
+    .strip
+      .container
+        - var featured = collections.featured(content.weddings)
+        if featured
+          .row
+            a(href='./#{featured._slug}.html')
+              img.col-xs-12(src=uc(featured.leadImage, '-/format/jpeg/-/resize/2048x/-/quality/lighter/'))
+              .col-xs-12.m-t-2.m-b-0.text-xs-center
+                h1.text-uppercase Feature of the week
+                p.lead.m-b-0.text-gray.text-uppercase=featured.name
+    .strip
+      .container
+        h4.text-xs-center.text-uppercase.text-gray.m-b-2 - Real Weddings -
         .row
-          a(href='./#{featured._slug}.html')
-            img.col-xs-12(src=featured.leadImage)
-            .col-xs-12.m-t-2.m-b-0.text-xs-center
-              .h3.text-primary.text-uppercase Feature of the week
-              h3.m-b-0.text-muted.text-uppercase=featured.name
-  .strip
-    .container
-      h4.text-xs-center.text-uppercase.text-muted.m-y-2 - Real Weddings -
-      .row
-        each wedding in content.weddings
-          .col-sm-6.col-md-4.m-b-0
-            +wedding-card(wedding)
-
-block asides
+          each wedding in content.weddings
+            .col-sm-6.col-md-4.m-b-0
+              +wedding-card(wedding)

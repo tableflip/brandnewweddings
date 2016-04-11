@@ -8,7 +8,8 @@ html(lang='en')
     meta(http-equiv='x-ua-compatible' content='ie=edge')
     link(rel='stylesheet' href='#{meta.relativePathToRoot}/bundle.css')
     title=content.pageTitle || 'Br&new Weddings'
-  body(class='page-#{meta.name}')
+  - var bodyClass = meta.name.split('/').join(' page-')
+  body(class='page-#{bodyClass}')
     +header(meta.name)
     block main
     block asides

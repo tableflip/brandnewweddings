@@ -1,7 +1,7 @@
 extends ../layout
 
 block main
-  .strip
+  .strip.not-sent
     .container
       .row
         .col-lg-offset-1.col-lg-10
@@ -101,3 +101,17 @@ block main
               textarea.form-control(id='contact-notes' placeholder='Additional Notes...' rows=6)
             .form-group.text-xs-center
               input.btn.btn-primary.btn-lg(type='submit' value='SUBMIT')
+  .strip.sent-true
+    .container
+      .row
+        .col-lg-offset-1.col-lg-10
+          .text-xs-center
+            h1.text-uppercase=content.thankYouTitle
+            !=md.render(content.thankYouText)
+  .strip.sent-false
+    .container
+      .row
+        .col-lg-offset-1.col-lg-10
+          .text-xs-center
+            h1.text-uppercase.text-danger Sorry, something went wrong...
+            p.lead Please email us directly at #[a(href='mailto:freya@thebrandnewstudio.com') freya@thebrandnewstudio.com]

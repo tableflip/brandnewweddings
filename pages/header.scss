@@ -36,3 +36,11 @@
     }
   }
 }
+
+@include media-breakpoint-up(lg) {
+  #header {
+    .nav-item {
+      width: 16.6%;
+    }
+  }
+}

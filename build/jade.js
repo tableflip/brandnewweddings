@@ -56,7 +56,7 @@ find.file(/\index.jade$/, inputDir, (files) => {
           output: path.join(outputDir, task.meta.name, `${entry._slug}.html`),
           content: extend({}, task.content, { _entry: entry }),
           meta: {
-            name: `${task.name}/${entry._slug}`,
+            name: `${task.meta.name}/${entry._slug}`,
             relativePathToRoot: '..'
           }
         })

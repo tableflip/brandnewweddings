@@ -12,6 +12,8 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'fonts';
 
+// Element
+
 body {
   letter-spacing: 1px;
 }
@@ -26,11 +28,7 @@ h2 {
   letter-spacing: 2px;
 }
 
-@import 'header';
-@import 'social';
-@import 'exhibit';
-@import 'awards';
-@import 'footer';
+// Class
 
 .btn {
   font-family: $headings-font-family;
@@ -42,6 +40,9 @@ h2 {
 .text-accent {
   color: $brand-accent;
 }
+.text-gray {
+  color: $brand-gray;
+}
 .border-primary {
   border: 1px solid $brand-primary;
 }
@@ -50,8 +51,12 @@ h2 {
 }
 .strip {
   margin: $spacer-y $spacer-x;
-  padding: $spacer-y 0 ($spacer-y * 2);
+  padding: ($spacer-y * 3) 0;
   border-bottom: 1px solid $brand-gray-light;
+
+  &:first-child {
+    padding-top: $spacer-y;
+  }
 }
 .row-mosaic {
   @include make-row($grid-gutter-width / 4);
@@ -75,15 +80,19 @@ h2 {
   margin-bottom: $spacer-y;
 }
 
-@include media-breakpoint-up(lg) {
-  #header {
-    .nav-item {
-      width: 16.6%;
-    }
-  }
-}
+// Component
+
+@import 'header';
+@import 'social';
+@import 'exhibit';
+@import 'awards';
+@import 'footer';
+
+// Page
 
 @import 'about/about';
+@import 'contact/contact';
+@import 'home/home';
 @import 'inspiration/inspiration';
 @import 'messages/messages';
 @import 'real-weddings/real-weddings';
