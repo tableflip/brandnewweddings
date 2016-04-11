@@ -115,3 +115,19 @@ block main
           .text-xs-center
             h1.text-uppercase.text-danger Sorry, something went wrong...
             p.lead Please email us directly at #[a(href='mailto:freya@thebrandnewstudio.com') freya@thebrandnewstudio.com]
+  .strip
+    .container
+      .row
+        .col-lg-offset-1.col-lg-10
+          .text-xs-center
+            h1.text-uppercase - Other Contact Details -
+            p
+              small Our postal address:
+              br
+              =content.otherContactPostal
+            p
+              small Phone:
+              br
+              a(href='tel:#{content.otherContactPhone}')=content.otherContactPhone
+            .text-accent.text-uppercase
+              !=md.render(content.otherContactText)
