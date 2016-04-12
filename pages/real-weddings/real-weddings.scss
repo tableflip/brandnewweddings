@@ -1,4 +1,9 @@
 .page-real-weddings {
+  .row-mosaic {
+    img {
+      margin-bottom: $grid-gutter-width / 4;
+    }
+  }
   .svg-icon-quote-open, .svg-icon-quote-close {
     svg {
       width: 40px;
@@ -14,20 +19,6 @@
   }
 }
 
-.img-container {
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  margin-bottom: $grid-gutter-width / 4;
-
-  &.high {
-    height: 550px;
-  }
-  &.v-high {
-    height: 628px;
-  }
-}
 .wedding-card {
   border: none;
   border-bottom: 1px solid $brand-gray-light;
@@ -38,9 +29,6 @@
     .card-text {
       color: $brand-accent;
     }
-  }
-  .img-container {
-    margin-bottom: 0;
   }
   .card-block {
     font-family: $headings-font-family;
