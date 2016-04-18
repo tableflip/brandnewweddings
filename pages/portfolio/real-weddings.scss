@@ -1,0 +1,43 @@
+.page-real-weddings {
+  .row-mosaic {
+    img {
+      margin-bottom: $grid-gutter-width / 4;
+    }
+  }
+  .svg-icon-quote-open, .svg-icon-quote-close {
+    svg {
+      width: 40px;
+      height: 30px;
+    }
+  }
+  .svg-icon-quote-open {
+    margin-left: $spacer-x;
+  }
+  .svg-icon-quote-close {
+    float: right;
+    margin: -6rem $spacer-x 0 0;
+  }
+}
+
+.wedding-card {
+  border: none;
+  border-bottom: 1px solid $brand-gray-light;
+
+  &:hover {
+    text-decoration: none;
+
+    .card-text {
+      color: $brand-accent;
+    }
+  }
+  .card-block {
+    font-family: $headings-font-family;
+    padding: 0.5rem 1.25rem;
+  }
+  .card-text {
+    color: $brand-gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,24 @@
+extends ../layout
+include ../icon
+
+block main
+  main
+    .strip
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10.text-xs-center
+            +icon('heart')
+            .text-uppercase.text-primary
+              !=md.render(content.introText)
+    each testimonial in content.testimonials
+      .section.strip.strip-message
+        .container
+          .row
+            .col-lg-offset-1.col-lg-10.text-xs-center
+              h1.text-uppercase
+                if testimonial.link
+                  a(href=testimonial.link).text-primary=testimonial.title
+                else
+                  =testimonial.title
+              blockquote=testimonial.quote
+              p.font-weight-bold.font-italic=testimonial.quoteFrom
