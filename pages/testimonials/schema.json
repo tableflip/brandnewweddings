@@ -1,0 +1,19 @@
+{
+  "introText": {
+    "type": "textarea"
+  },
+  "testimonials": [{
+    "title": {
+      "type": "text",
+      "default": "New testimonial"
+    },
+    "quote": {
+      "type": "textarea",
+      "default": ""
+    },
+    "quoteFrom": {
+      "type": "text",
+      "default": ""
+    }
+  }]
+}

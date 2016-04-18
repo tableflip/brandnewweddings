@@ -1,0 +1,6 @@
+mixin wedding-card (wedding)
+  a.card.wedding-card(href='#{meta.relativePathToRoot}/real-weddings/#{wedding._slug}.html')
+    img.img-fluid(src=uc(wedding.previewImage, '-/format/jpeg/-/scale_crop/714x500/center/-/quality/lighter/'))
+    .card-block
+      .text-xs-center.text-uppercase.card-text=wedding.name
+      .text-xs-center.card-text=wedding.description

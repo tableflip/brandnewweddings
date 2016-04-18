@@ -1,0 +1,70 @@
+extends ../layout
+include wedding-card
+include ../icon
+
+block main
+  main
+    .strip
+      .container
+        .row
+          img.col-xs-12(src=content._entry.leadImage)
+          .col-xs-12.m-t-2.m-b-0
+            h1.text-xs-center.text-uppercase=content._entry.couple
+            p.lead.text-xs-center.text-uppercase.text-gray.m-b-0=content._entry.description
+    .strip
+      .container
+        .row.m-b-2
+          .col-md-10.col-md-offset-1.text-xs-center
+            !=md.render(content._entry.blurb)
+        .row.row-mosaic
+          .col-md-6
+            img.img-fluid(src=uc(content._entry.gridImage1, '-/format/jpeg/-/scale_crop/1110x1110/center/-/quality/lighter/'))
+          .col-md-6
+            img.img-fluid(src=uc(content._entry.gridImage2, '-/format/jpeg/-/scale_crop/1110x1110/center/-/quality/lighter/'))
+          .col-md-6
+            img.img-fluid(src=uc(content._entry.gridImage3, '-/format/jpeg/-/scale_crop/1110x1110/center/-/quality/lighter/'))
+          .col-md-6
+            img.img-fluid(src=uc(content._entry.gridImage4, '-/format/jpeg/-/scale_crop/1110x1110/center/-/quality/lighter/'))
+        .row.m-y-3
+          .col-sm-1.col-md-2.hidden-xs-down
+            +icon('quote-open')
+          .col-sm-10.col-md-8.p-y-3
+            p.text-xs-center=content._entry.quote
+            p.h1.text-xs-center.text-primary.m-b-0=content._entry.quoteFrom
+        .hidden-xs-down
+          +icon('quote-close')
+        .row.row-mosaic
+          .col-xs-12
+            img.img-fluid(src=uc(content._entry.masonryImageTop, '-/format/jpeg/-/scale_crop/2048x1152/center/-/quality/lighter/'))
+          .col-sm-4.col-md-3.hidden-xs-down
+            img.img-fluid(src=uc(content._entry.masonryImageLeft, '-/format/jpeg/-/scale_crop/550x1152/center/-/quality/lighter/'))
+          .col-sm-8.col-md-9.hidden-xs-down
+            img.img-fluid(src=uc(content._entry.masonryImageRight, '-/format/jpeg/-/scale_crop/1672x1152/center/-/quality/lighter/'))
+          .col-xs-12
+            img.img-fluid(src=uc(content._entry.masonryImageBottom, '-/format/jpeg/-/scale_crop/2048x1152/center/-/quality/lighter/'))
+    .strip
+      .container
+        h2.h1.text-xs-center.text-uppercase.text-primary.m-b-2 - Suppliers - 
+        .row
+          .col-sm-10.col-md-8.col-sm-offset-1.col-md-offset-2
+            each supplier in content._entry.suppliers
+              p.text-xs-center=supplier
+    .strip
+      .container
+        - var next = collections.offset(content._entry, content.weddings, 1)
+        - var prev = collections.offset(content._entry, content.weddings, -1)
+        .row.m-b-1
+          .col-sm-3.hidden-xs-down
+            a(href=prev && './#{prev._slug}.html' disabled=!prev).h4.text-uppercase.text-gray &lt; Previous
+          .col-xs-12.col-sm-6
+            h2.h1.text-xs-center.text-uppercase.text-primary - More real weddings - 
+          .col-sm-3.text-xs-right.hidden-xs-down        
+            a(href=next && './#{next._slug}.html' disabled=!next).h4.text-uppercase.text-gray Next &gt;
+          .col-xs-6.hidden-sm-up
+            a(href=prev && './#{prev._slug}.html' disabled=!prev).h4.text-uppercase.text-gray &lt; Previous
+          .col-xs-6.text-xs-right.hidden-sm-up
+            a(href=next && './#{next._slug}.html' disabled=!next).h4.text-uppercase.text-gray Next &gt;
+        .row
+          each wedding in collections.others(content._entry, content.weddings, 3)
+            .col-md-4
+              +wedding-card(wedding)

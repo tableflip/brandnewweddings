@@ -1,0 +1,58 @@
+{
+  "weddings": [{
+    "name": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+		"couple": {
+      "type": "text"
+    },
+		"blurb": {
+      "type": "textarea"
+    },
+		"quote": {
+      "type": "textarea"
+    },
+		"quoteFrom": {
+      "type": "text"
+    },
+		"suppliers": {
+      "type": "list"
+    },
+		"previewImage": {
+      "type": "img"
+    },
+		"leadImage": {
+      "type": "img"
+    },
+		"gridImage1": {
+      "type": "img"
+    },
+		"gridImage2": {
+      "type": "img"
+    },
+		"gridImage3": {
+      "type": "img"
+    },
+		"gridImage4": {
+      "type": "img"
+    },
+		"masonryImageTop": {
+      "type": "img"
+    },
+		"masonryImageLeft": {
+      "type": "img"
+    },
+		"masonryImageRight": {
+      "type": "img"
+    },
+		"masonryImageBottom": {
+      "type": "img"
+    },
+		"featured": {
+      "type": "boolean"
+    }
+  }]
+}
