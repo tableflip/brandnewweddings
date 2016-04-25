@@ -83,3 +83,23 @@ find.file(/\index.jade$/, inputDir, (files) => {
     console.log('Compiled %s templates in %sms', tasks.length, Date.now() - start)
   })
 })
+
+var legacyRoutes = [
+  { old: '/caricatures', new: '/portfolio' },
+  { old: '/the-designer', new: '/about' },
+  { old: '/news', new: '/testimonials' },
+  { old: '/process', new: '/about' },
+  { old: '/what-people-say', new: '/testimonials' },
+  { old: '/get-in-touch', new: '/contact' },
+  { old: '/terms-and-conditions', new: '/terms' }
+]
+
+async.each(legacyRoutes, (route, done) => {
+  mkdirp(path.join(outputDir, route.old), () => {
+    var redirect = 'http://brandnewweddings.co.uk' + route.new
+    var html = jade.renderFile(path.join(__dirname, 'legacy-redirect.jade'), {redirect: redirect})
+    fs.writeFile(path.join(outputDir, route.old, 'index.html'), html, {encoding: 'utf8'}, done)
+  })
+}, (err) => {
+  if (err) return console.error(err)
+})
