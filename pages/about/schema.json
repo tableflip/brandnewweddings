@@ -1,4 +1,7 @@
 {
+  "pickList": {
+    "type": "list"
+  }
   "introText1": {
     "type": "textarea"
   },

@@ -9,6 +9,10 @@ block main
           .text-accent
             !=md.render(content.pickListLeadText)
             !=md.render(content.pickListText)
+        if content.pickList
+          .row
+            each item in content.pickList
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3=item
     .strip
       .container.text-xs-center
         h1.text-uppercase.text-accent=content.personalServiceTitle
