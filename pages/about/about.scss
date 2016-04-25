@@ -1,4 +1,10 @@
 .page-about {
+  .introHeroImage {
+    height: 480px;
+    height: 70vh;
+    background-position: center center;
+    background-size: cover;
+  }
   .row-mosaic {
     img {
       margin-bottom: $grid-gutter-width / 4;

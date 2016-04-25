@@ -3,25 +3,18 @@ extends ../layout
 block main
   main
     .strip
-      .container
-        .row.row-mosaic.m-b-2
-          .col-xs-6
-            img.img-fluid(src=uc(content.introImage1, '-/format/jpeg/-/scale_crop/1920x1920/center/-/quality/lighter/'))
-          .col-xs-6
-            .row.row-mosaic
-              .col-xs-6
-                img.img-fluid(src=uc(content.introImage2, '-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/'))
-                img.img-fluid(src=uc(content.introImage3, '-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/'))
-              .col-xs-6
-                img.img-fluid(src=uc(content.introImage4, '-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/'))
-                img.img-fluid(src=uc(content.introImage5, '-/format/jpeg/-/scale_crop/510x510/center/-/quality/lighter/'))
-        .row
-          .col-lg-4
-            h1.h2.text-accent=content.introTitle1
-            !=md.render(content.introText1)
-          .col-lg-8
-            h1.h2.text-accent=content.introTitle2
-            !=md.render(content.introText2)
+      .container.text-xs-center
+        h1.text-uppercase.text-accent=content.pickListTitle
+        if content.pickListLeadText
+          .text-accent
+            !=md.render(content.pickListLeadText)
+            !=md.render(content.pickListText)
+    .strip
+      .container.text-xs-center
+        h1.text-uppercase.text-accent=content.personalServiceTitle
+        if content.personalServiceText
+          .text-accent
+            !=md.render(content.personalServiceText)
     .strip
       .container
         h1.text-xs-center.text-accent.text-uppercase.m-b-2=content.whatWeOfferTitle
@@ -37,13 +30,6 @@ block main
             img.img-fluid(src=uc(content.whatWeOfferImage6, '-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/'))
         .text-xs-center
           !=md.render(content.whatWeOfferText)
-    .strip
-      .container.text-xs-center
-        h1.text-uppercase.text-accent=content.pickListTitle
-        if content.pickListLeadText
-          .text-accent
-            !=md.render(content.pickListLeadText)
-        !=md.render(content.pickListText)
     .strip
       .container
         .row
@@ -68,3 +54,15 @@ block main
                 p.hidden-md-up
                   img.img-circle.border-primary(src=uc(content.specialistImage, '-/format/jpeg/-/scale_crop/516x516/center/-/quality/lighter/'))
                 !=md.render(content.specialistText)
+    .strip
+      .container
+        .row.m-b-2
+          - var url = uc(content.introHeroImage, '-/format/jpeg/-/scale_crop/1920x1920/center/-/quality/lighter/')
+          .col-xs-12.introHeroImage(style='background-image: url(#{url})')
+        .row
+          .col-lg-4
+            h1.h2.text-accent=content.introTitle1
+            !=md.render(content.introText1)
+          .col-lg-8
+            h1.h2.text-accent=content.introTitle2
+            !=md.render(content.introText2)
