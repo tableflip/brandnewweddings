@@ -39,7 +39,6 @@ find.file(/\index.jade$/, inputDir, (files) => {
       task.output = path.join(outputDir, 'index.html')
       task.meta.relativePathToRoot = '.'
     })
-
   // add tasks for any collection routes
   tasks
     .forEach((task) => {

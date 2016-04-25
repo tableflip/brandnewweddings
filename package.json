@@ -80,7 +80,7 @@
     "watchify": "^3.7.0"
   },
   "subPages": {
-    "real-weddings": {
+    "portfolio": {
       "field": "weddings",
       "slugFrom": "name",
       "template": "wedding"
