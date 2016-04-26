@@ -19,7 +19,7 @@
       "type": "text"
     },
 		"suppliers": {
-      "type": "list"
+      "type": "textarea"
     },
 		"previewImage": {
       "type": "img"
