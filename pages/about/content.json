@@ -1,8 +1,13 @@
 {
 	"pageTitle": "About",
 	"pickListTitle": "- The Pick List -",
-	"pickListLeadText": "YOUR WEDDING STATIONERY DOESN’T NEED TO STOP AT THE INVITATIONS",
-	"pickListText": "WE WORK WITH YOU TO CREATE A CONSISTENT & EXCITING SUITE OF BESPOKE STATIONERY WHICH TAKES YOU ALL THE WAY THROUGH YOUR DAY, FROM SAVE THE DATES TO THANKYOU CARDS.\nThe list of possibilies is endless but here are a few of the most popular requests...",
+	"pickListImage1": "https://ucarecdn.com/e920f791-0de3-42a3-b336-6f3ba366992c/",
+	"pickListImage2": "https://ucarecdn.com/01c05d3c-adfc-437f-a6e0-2c5d70c83c44/",
+	"pickListImage3": "https://ucarecdn.com/1afb973a-ad0f-43ab-befe-1916271cb28b/",
+	"pickListImage4": "https://ucarecdn.com/db6172b9-67bd-41cb-8e87-5777a7eb785e/",
+	"pickListImage5": "https://ucarecdn.com/fcadbb6e-9f55-4b6c-a7c0-b8ab1223d07f/",
+	"pickListLeadText": "- YOUR WEDDING STATIONERY DOESN’T NEED TO STOP AT THE INVITATIONS -",
+	"pickListText": "WE WORK WITH YOU TO CREATE A CONSISTENT & EXCITING SUITE OF BESPOKE STATIONERY WHICH TAKES YOU ALL THE WAY THROUGH YOUR DAY, FROM SAVE THE DATES TO THANKYOU CARDS.\n\nThe list of possibilies is endless but here are a few of the most popular requests...",
 	"pickList": [
 		"Save the Date's",
 		"Invitations",
@@ -21,8 +26,8 @@
 		"Groomsmen cards"
 	],
 	"personalServiceTitle": "- A Personal Service -",
-	"personalServiceText": "Your wedding day is one of the most important milestones in your relationship and should reflect you both as a couple.\nYour wedding stationery is one of the best & easiest ways to incorporate your personalities into the day and is also the first glimpse many of your guests will see of what is to come - an introduction to your day. Quite often the stationery is also a keepsake for you, your friends and family being out on display for years to come.\nFor this reason, we believe it is really important to get to know our couples so we often like to set up a meeting with you to discuss your day and to get to know you a bit before we start any design work!\nGet in touch via our contact form to set up a meeting.",
-	"introHeroImage": "https://ucarecdn.com/4faaafa9-4ea8-4dbb-b76a-e565e7ab9709/",
+	"personalServiceText": "Your wedding day is one of the most important milestones in your relationship and should reflect you both as a couple.\n\nYour wedding stationery is one of the best & easiest ways to incorporate your personalities into the day and is also the first glimpse many of your guests will see of what is to come - an introduction to your day. Quite often the stationery is also a keepsake for you, your friends and family being out on display for years to come.\n\nFor this reason, we believe it is really important to get to know our couples so we often like to set up a meeting with you to discuss your day and to get to know you a bit before we start any design work!\n\nGet in touch via our contact form to set up a meeting.",
+	"introHeroImage": "https://ucarecdn.com/38dcf0b1-1dd5-4f65-823b-da8524256101/",
 	"introTitle1": "A Br&new story",
 	"introText1": "Having worked for award winning graphic and product design consultancies in the big smoke for 8 years our designer Freya decided it was time for a change and set about starting Br&newweddings and our parent company TheBr&newstudio LTD.\n\nWhilst TheBr&newstudio concentrates on the more corporate world of graphics designing brands, logos, websites and corporate identities for some fantastic clients, our little sister Br&newweddings sets about making your wedding days beautiful and absolutely unique using all our skills, experience and inspiration.",
 	"introTitle2": "Hello!",

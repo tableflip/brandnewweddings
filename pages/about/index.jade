@@ -5,9 +5,19 @@ block main
     .strip
       .container.text-xs-center
         h1.text-uppercase.text-accent=content.pickListTitle
+        .row.row-mosaic
+          .col-xs-4
+            img.img-fluid(src=uc(content.pickListImage1, '-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/'))
+            img.img-fluid(src=uc(content.pickListImage2, '-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/'))
+          .col-xs-4
+            img.img-fluid(src=uc(content.pickListImage3, '-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/'))
+            img.img-fluid(src=uc(content.pickListImage4, '-/format/jpeg/-/scale_crop/732x410/center/-/quality/lighter/'))
+          .col-xs-4
+            img.img-fluid(src=uc(content.pickListImage5, '-/format/jpeg/-/scale_crop/732x839/center/-/quality/lighter/'))
         if content.pickListLeadText
-          .text-accent
-            !=md.render(content.pickListLeadText)
+          .row
+            h1.text-uppercase.text-accent=content.pickListLeadText
+          if content.pickListText
             !=md.render(content.pickListText)
         if content.pickList
           .row
@@ -17,8 +27,7 @@ block main
       .container.text-xs-center
         h1.text-uppercase.text-accent=content.personalServiceTitle
         if content.personalServiceText
-          .text-accent
-            !=md.render(content.personalServiceText)
+          !=md.render(content.personalServiceText)
     .strip
       .container
         h1.text-xs-center.text-accent.text-uppercase.m-b-2=content.whatWeOfferTitle
