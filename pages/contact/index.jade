@@ -121,14 +121,13 @@ block main
         .row
           .col-lg-offset-1.col-lg-10
             .text-xs-center
-              h1.text-uppercase - Other Contact Details -
-              p
-                small Our postal address:
-                br
-                =content.otherContactPostal
-              p
-                small Phone:
-                br
-                a(href='tel:#{content.otherContactPhone}')=content.otherContactPhone
-              .text-accent.text-uppercase
-                !=md.render(content.otherContactText)
+              h1.text-uppercase=content.meetingsTitle
+              !=md.render(content.meetingsText)
+    .strip
+      .container
+        .row
+          .col-lg-offset-1.col-lg-10
+            .text-xs-center
+              h1.text-uppercase=content.contactDetailsTitle
+              !=md.render(content.contactDetailsText)
+              
