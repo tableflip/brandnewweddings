@@ -3,8 +3,17 @@
     "type": "textarea"
   },
   "moodboards": [{
+     "title": {
+       "type": "text",
+       "default": "Add a title"
+     },
      "thumbnail": {
-       "type": "img"
+       "type": "img",
+       "default": "http://placehold.it/350x150"
+     },
+     "link": {
+       "type": "url",
+       "default": "http://example.com"
      }
   }]
 }
