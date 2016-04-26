@@ -47,8 +47,8 @@ block main
         h2.h1.text-xs-center.text-uppercase.text-primary.m-b-2 - Suppliers - 
         .row
           .col-sm-10.col-md-8.col-sm-offset-1.col-md-offset-2
-            each supplier in content._entry.suppliers
-              p.text-xs-center=supplier
+            p.text-xs-center
+              !=md.renderInline(content._entry.suppliers)
     .strip
       .container
         - var next = collections.offset(content._entry, content.weddings, 1)
