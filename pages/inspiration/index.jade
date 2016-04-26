@@ -5,16 +5,17 @@ block main
     .strip
       .container.text-xs-center
         .row
+          .col-lg-offset-1.col-lg-10
+            h1.text-uppercase=content.introTitle
+            !=md.render(content.introText)
+        .row.p-t-1
           each moodboard in content.moodboards
             .col-xs-12.col-sm-6.col-md-4
               a(href='#{moodboard.link}' target="_Blank")
                 img.img-fluid(src=uc(moodboard.thumbnail, '-/format/jpeg/-/scale_crop/714x500/center/-/quality/lighter/'))
-                .text-uppercase.text-xs-center=moodboard.title
+                .text-uppercase.text-xs-center.text-gray
+                  !=md.render(moodboard.title)
               hr
-        .row
-          .col-lg-offset-1.col-lg-10
-            h1.text-uppercase=content.introTitle
-            !=md.render(content.introText)
     .strip
       .container
         .row
