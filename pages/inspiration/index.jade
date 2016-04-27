@@ -4,36 +4,18 @@ block main
   main
     .strip
       .container.text-xs-center
-        .row.row-mosaic
-          .col-xs-5
-            img.img-fluid(src=uc(content.introImage1, '-/format/jpeg/-/scale_crop/920x510/center/-/quality/lighter/'))
-          .col-xs-2
-            img.img-fluid(src=uc(content.introImage2, '-/format/jpeg/-/scale_crop/360x510/center/-/quality/lighter/'))
-          .col-xs-3
-            img.img-fluid(src=uc(content.introImage3, '-/format/jpeg/-/scale_crop/548x510/center/-/quality/lighter/'))
-          .col-xs-2
-            img.img-fluid(src=uc(content.introImage4, '-/format/jpeg/-/scale_crop/360x510/center/-/quality/lighter/'))
-        .row.row-mosaic.m-b-2
-          .col-xs-6.col-md-3
-            img.img-fluid(src=uc(content.introImage5, '-/format/jpeg/-/scale_crop/548x1020/center/-/quality/lighter/'))
-          .col-xs-6.col-md-3.col-md-push-6
-            img.img-fluid(src=uc(content.introImage10, '-/format/jpeg/-/scale_crop/548x1020/center/-/quality/lighter/'))
-          .col-xs-12.col-md-6.col-md-pull-3
-            .row.row-mosaic
-              .col-xs-7
-                img.img-fluid(src=uc(content.introImage6, '-/format/jpeg/-/scale_crop/642x500/center/-/quality/lighter/'))
-              .col-xs-5
-                img.img-fluid(src=uc(content.introImage7, '-/format/jpeg/-/scale_crop/456x500/center/-/quality/lighter/'))
-            .row.row-mosaic
-              .col-xs-5
-                img.img-fluid(src=uc(content.introImage8, '-/format/jpeg/-/scale_crop/456x510/center/-/quality/lighter/'))
-              .col-xs-7
-                img.img-fluid(src=uc(content.introImage9, '-/format/jpeg/-/scale_crop/642x510/center/-/quality/lighter/'))
-          
         .row
           .col-lg-offset-1.col-lg-10
             h1.text-uppercase=content.introTitle
             !=md.render(content.introText)
+        .row.p-t-2
+          each moodboard in content.moodboards
+            .col-xs-12.col-sm-6.col-md-4
+              a(href='#{moodboard.link}' target="_Blank")
+                img.img-fluid(src=uc(moodboard.thumbnail, '-/format/jpeg/-/scale_crop/714x500/center/-/quality/lighter/'))
+                .text-uppercase.text-xs-center.text-gray
+                  !=md.render(moodboard.title)
+              hr
     .strip
       .container
         .row

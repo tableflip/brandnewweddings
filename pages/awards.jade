@@ -1,15 +1,17 @@
-mixin awardsImage (src, href)
-  a(href=href target='_blank')
-    img.img-fluid(src=src)
+mixin awardsImage (src, url)
+  a(href=url target='_blank')
+    img.img-fluid(src=src style="max-height: 9rem")
 
 aside#strip-awards.strip
   .container
     .row
-      .col-xs-6.col-sm-offset-2.col-sm-4.col-lg-2
-        +awardsImage(facts.awardsImage1, facts.awardsLink1)
-      .col-xs-6.col-sm-4.col-lg-2
-        +awardsImage(facts.awardsImage2, facts.awardsLink2)
-      .col-xs-6.col-sm-offset-2.col-sm-4.col-lg-offset-0.col-lg-2
-        +awardsImage(facts.awardsImage3, facts.awardsLink3)
-      .col-xs-6.col-sm-4.col-lg-2
-        +awardsImage(facts.awardsImage4, facts.awardsLink4)
+      .col-xs-12.col-sm-3
+        +awardsImage(facts.awards[0].src, facts.awards[0].url)
+      .col-xs-4.col-sm-2
+        +awardsImage(facts.awards[1].src, facts.awards[1].url)
+      .col-xs-4.col-sm-2
+        +awardsImage(facts.awards[2].src, facts.awards[2].url)
+      .col-xs-4.col-sm-2
+        +awardsImage(facts.awards[3].src, facts.awards[4].url)
+      .col-xs-12.col-sm-3
+        +awardsImage(facts.awards[4].src, facts.awards[4].url)

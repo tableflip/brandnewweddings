@@ -20,7 +20,7 @@
   }
   .nav-item {
     margin: 0;
-    width: 50%;
+    width: 100%;
 
     a {
       display: block;
@@ -33,6 +33,13 @@
       &:hover {
         color: $brand-accent;
       }
+    }
+  }
+}
+@include media-breakpoint-up(sm) {
+  #header {
+    .nav-item {
+      width: 50%;
     }
   }
 }
