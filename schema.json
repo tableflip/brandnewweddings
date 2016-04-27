@@ -1,4 +1,10 @@
 {
+  "description": {
+    "type": "textarea"
+  },
+  "exhibitText": {
+    "type": "textarea"
+  },
   "exhibitImage": {
     "type": "img"
   },
