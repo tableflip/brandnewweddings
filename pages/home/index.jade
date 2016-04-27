@@ -1,5 +1,5 @@
 extends ../layout
-include ../real-weddings/wedding-card
+include ../portfolio/wedding-card
 
 block main
   main
@@ -24,6 +24,6 @@ block main
               !=md.render(content.aboutText)
         h2.h3.text-xs-center.text-uppercase.text-gray.m-t-3.m-b-2 - Latest Work -
         .row
-          each wedding in realWeddings.recent(3)
+          each wedding in portfolio.recent(3)
             .col-md-4
               +wedding-card(wedding)
