@@ -11,10 +11,9 @@ block main
         .row.p-t-2
           each moodboard in content.moodboards
             .col-xs-12.col-sm-6.col-md-4
-              a(href='#{moodboard.link}' target="_Blank")
-                img.img-fluid(src=uc(moodboard.thumbnail, '-/format/jpeg/-/scale_crop/714x500/center/-/quality/lighter/'))
-                .text-uppercase.text-xs-center.text-gray
-                  !=md.render(moodboard.title)
+              img.img-fluid.moodboard(src=uc(moodboard.src, '-/format/jpeg/-/scale_crop/480x320/center/-/quality/lighter/') data-src='#{moodboard.src}' data-toggle='modal' data-target='#modal')
+              .text-uppercase.text-xs-center.text-gray
+                !=md.render(moodboard.title)
               hr
     .strip
       .container
@@ -23,3 +22,8 @@ block main
             h1.text-uppercase - Instagram -
             script(src='//lightwidget.com/widgets/lightwidget.js')
             iframe(src='//lightwidget.com/widgets/ad572eb5ef935bab9eb84b4aefdd127e.html' id='lightwidget_ad572eb5ef' name='lightwidget_ad572eb5ef'  scrolling='no' allowtransparency='true' class='lightwidget-widget' style='width: 100%; border: 0; overflow: hidden;')
+  #modal.modal.fade(role='dialog')
+    .modal-dialog.modal-lg
+      .modal-content
+        img#modal-img.img-fluid(src='#{meta.relativePathToRoot}/images/spinner.gif')
+    

@@ -1,4 +1,14 @@
 .page-inspiration {
+  .modal-content {
+    width: 100%; 
+  }
+  .modal-content::before {
+    content: '\00D7';
+    font-size: 4rem;
+    float: right;
+    margin: -2rem -2.5rem;
+    pointer-events: none;
+  }
   .row-mosaic {
     img {
       margin-bottom: $grid-gutter-width / 4;
