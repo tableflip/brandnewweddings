@@ -2,7 +2,7 @@
   "introText": {
     "type": "textarea"
   },
-  "messages": [{
+  "testimonials": [{
     "title": {
       "type": "text",
       "default": "New testimonial"
