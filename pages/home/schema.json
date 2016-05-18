@@ -2,7 +2,7 @@
   "carousel": [{
     "title": {
       "type": "text",
-      "default": "New entry"
+      "default": "New Carousel Item"
      },
     "image": {
       "type": "img",
