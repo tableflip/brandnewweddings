@@ -5,7 +5,7 @@
   "messages": [{
     "title": {
       "type": "text",
-      "default": "New message"
+      "default": "New testimonial"
     },
     "quote": {
       "type": "textarea",
@@ -14,6 +14,10 @@
     "quoteFrom": {
       "type": "text",
       "default": ""
+    },
+    "link": {
+      "type": "text",
+      "default": "http://example.com"
     }
   }]
 }
