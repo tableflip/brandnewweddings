@@ -7,13 +7,9 @@
        "type": "text",
        "default": "Add a title"
      },
-     "thumbnail": {
+     "src": {
        "type": "img",
-       "default": "http://placehold.it/350x150"
-     },
-     "link": {
-       "type": "url",
-       "default": "http://example.com"
+       "default": "http://placehold.it/250x250"
      }
   }]
 }
