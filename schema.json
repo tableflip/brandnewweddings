@@ -12,7 +12,13 @@
     "type": "url"
   },
   "awards": [{
-    "src": { "type": "img" },
-    "url": { "type": "url" }
+    "src": {
+      "type": "img",
+      "default": "http://placehold.it/350x350"
+    },
+    "url": {
+      "type": "url",
+      "default": "http://example.com"
+    }
   }]
 }
