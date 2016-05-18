@@ -9,7 +9,10 @@
     "type": "img"
   },
   "exhibitLink": {
-    "type": "url"
+    "type": "url",
+    "validation": {
+      "pattern": "^(https?://)?([0-9a-z.-]+).([a-z.]{2,6})([/[0-9][a-z].-]*)*/?$"
+    }
   },
   "awards": [{
     "src": {
