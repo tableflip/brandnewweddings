@@ -1,43 +1,43 @@
 {
-	"pageTitle": "Inspiration",
-	"introTitle": "- Inspiration Station -",
-	"introText": "Many of our couples already have a good idea of the style they want for their wedding stationery, our job is to bring these ideas to life and really push the design so the result is even better than you imagined.\n\nIf you are struggling with a direction or style for your day don’t worry! We have extensive experience in design briefs and will work with you to create style and mood boards to help bring your day together so the stationery fits in perfectly.\n\nWe create moodboards for each and every couple giving you a template from which to start planning your day and are more than happy to chat through other ideas for your day which aren't paper related.",
-	"moodboards": [
-		{
-			"title": "Watercolour\nWild Rose",
-			"src": "https://ucarecdn.com/a892711c-8b5f-4d7c-a2c3-e991b28fef0f/"
-		},
-		{
-			"title": "Woodland\nAdventure",
-			"src": "https://ucarecdn.com/aa24176d-9c4c-48d0-8501-4f74a6e0abd2/"
-		},
-		{
-			"title": "Tropical\nAdventure",
-			"src": "https://ucarecdn.com/277d31e0-c587-4182-99de-557d213c5b9f/"
-		},
-		{
-			"title": "&nbsp;\nScandi Chic",
-			"src": "https://ucarecdn.com/0072120f-6429-452b-8492-25bedc2dbef9/"
-		},
-		{
-			"title": "Old Gold\nDecadance",
-			"src": "https://ucarecdn.com/fcbe6c46-9318-42e1-83a7-4f374ecf3a62/"
-		},
-		{
-			"title": "Whiskey\nLeather",
-			"src": "https://ucarecdn.com/31a942c7-0139-4499-8c03-cbaeaf7b7ce6/"
-		},
-		{
-			"title": "French Blue\nSoft Romance",
-			"src": "https://ucarecdn.com/088e1347-7835-4312-9a9a-6bab4ea0e44a/"
-		},
-		{
-			"title": "&nbsp;\nBlush Sugar",
-			"src": "https://ucarecdn.com/17a4787b-c3ed-41eb-aa9e-aba834d0b1fc/"
-		},
-		{
-			"title": "&nbsp;\nFerns Fresh",
-			"src": "https://ucarecdn.com/c51bdd08-3ef8-4555-8d1f-0138aa06e3e8/"
-		}
-	]
+  "pageTitle": "Inspiration",
+  "introTitle": "- Inspiration Station -",
+  "introText": "Many of our couples already have a good idea of the style they want for their wedding stationery, our job is to bring these ideas to life and really push the design so the result is even better than you imagined.\n\nIf you are struggling with a direction or style for your day don’t worry! We have extensive experience in design briefs and will work with you to create style and mood boards to help bring your day together so the stationery fits in perfectly.\n\nWe create moodboards for each and every couple giving you a template from which to start planning your day and are more than happy to chat through other ideas for your day which aren't paper related.",
+  "moodboards": [
+    {
+      "title": "Watercolour\nWild Rose",
+      "src": "https://ucarecdn.com/a892711c-8b5f-4d7c-a2c3-e991b28fef0f/"
+    },
+    {
+      "title": "Woodland\nAdventure",
+      "src": "https://ucarecdn.com/aa24176d-9c4c-48d0-8501-4f74a6e0abd2/"
+    },
+    {
+      "title": "Tropical\nAdventure",
+      "src": "https://ucarecdn.com/277d31e0-c587-4182-99de-557d213c5b9f/"
+    },
+    {
+      "title": "&nbsp;\nScandi Chic",
+      "src": "https://ucarecdn.com/0072120f-6429-452b-8492-25bedc2dbef9/"
+    },
+    {
+      "title": "Old Gold\nDecadance",
+      "src": "https://ucarecdn.com/fcbe6c46-9318-42e1-83a7-4f374ecf3a62/"
+    },
+    {
+      "title": "Whiskey\nLeather",
+      "src": "https://ucarecdn.com/31a942c7-0139-4499-8c03-cbaeaf7b7ce6/"
+    },
+    {
+      "title": "French Blue\nSoft Romance",
+      "src": "https://ucarecdn.com/088e1347-7835-4312-9a9a-6bab4ea0e44a/"
+    },
+    {
+      "title": "Blush Sugar",
+      "src": "https://ucarecdn.com/17a4787b-c3ed-41eb-aa9e-aba834d0b1fc/"
+    },
+    {
+      "title": "&nbsp;\nFerns Fresh",
+      "src": "https://ucarecdn.com/c51bdd08-3ef8-4555-8d1f-0138aa06e3e8/"
+    }
+  ]
 }
