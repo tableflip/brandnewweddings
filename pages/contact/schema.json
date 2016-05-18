@@ -2,7 +2,10 @@
   "introText": {
     "type": "textarea"
   },
-  "thankYouText": {
+  "meetingsText": {
+    "type": "textarea"
+  },
+  "contactDetailsText": {
     "type": "textarea"
   }
 }
