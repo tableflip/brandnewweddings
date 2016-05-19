@@ -2,6 +2,24 @@
   "pickList": {
     "type": "list"
   },
+  "pickListImage1": {
+    "type": "img"
+  },
+  "pickListImage2": {
+    "type": "img"
+  },
+  "pickListImage3": {
+    "type": "img"
+  },
+  "pickListImage4": {
+    "type": "img"
+  },
+  "pickListImage5": {
+    "type": "img"
+  },
+  "introHeroImage": {
+    "type": "img"
+  },
   "introText1": {
     "type": "textarea"
   },
@@ -11,6 +29,24 @@
   "whatWeOfferText": {
     "type": "textarea"
   },
+  "whatWeOfferImage1": {
+    "type": "img"
+  },
+  "whatWeOfferImage2": {
+    "type": "img"
+  },
+  "whatWeOfferImage3": {
+    "type": "img"
+  },
+  "whatWeOfferImage4": {
+    "type": "img"
+  },
+  "whatWeOfferImage5": {
+    "type": "img"
+  },
+  "whatWeOfferImage6": {
+    "type": "img"
+  },
   "pickListLeadText": {
     "type": "textarea"
   },
@@ -19,5 +55,14 @@
   },
   "howWeWorkText": {
     "type": "textarea"
+  },
+  "howWeWorkImage": {
+    "type": "img"
+  },
+  "specialistText": {
+    "type": "textarea"
+  },
+  "specialistImage": {
+    "type": "img"
   }
 }
