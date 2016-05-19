@@ -2,7 +2,7 @@
   "weddings": [{
     "name": {
       "type": "text",
-      "default": ""
+      "default": "New Wedding"
     },
     "description": {
       "type": "text",
