@@ -1,58 +1,76 @@
 {
   "weddings": [{
     "name": {
-      "type": "text"
+      "type": "text",
+      "default": ""
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "default": ""
     },
 		"couple": {
-      "type": "text"
+      "type": "text",
+      "default": ""
     },
 		"blurb": {
-      "type": "textarea"
+      "type": "textarea",
+      "default": ""
     },
 		"quote": {
-      "type": "textarea"
+      "type": "textarea",
+      "default": ""
     },
 		"quoteFrom": {
-      "type": "text"
+      "type": "text",
+      "default": ""
     },
 		"suppliers": {
-      "type": "textarea"
+      "type": "textarea",
+      "default": ""
     },
 		"previewImage": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/250x250"
     },
 		"leadImage": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/500x250"
     },
 		"gridImage1": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/250x250"
     },
 		"gridImage2": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/250x250"
     },
 		"gridImage3": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/250x250"
     },
 		"gridImage4": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/250x250"
     },
 		"masonryImageTop": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/500x250"
     },
 		"masonryImageLeft": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/100x250"
     },
 		"masonryImageRight": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/400x250"
     },
 		"masonryImageBottom": {
-      "type": "img"
+      "type": "img",
+      "default": "http://placehold.it/500x250"
     },
 		"featured": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }]
 }
