@@ -7,7 +7,7 @@ block main
     .strip
       .container
         .row
-          img.col-xs-12(src=uc(content._entry.leadImage, '-/format/jpeg/-/scale_crop/2048x/center/-/quality/lighter/'))
+          img.col-xs-12(src=uc(content._entry.leadImage, '-/format/jpeg/-/resize/2048x/-/quality/lighter/'))
           .col-xs-12.m-t-2.m-b-0
             h1.text-xs-center.text-uppercase=content._entry.couple
             p.lead.text-xs-center.text-uppercase.text-gray.m-b-0=content._entry.description
