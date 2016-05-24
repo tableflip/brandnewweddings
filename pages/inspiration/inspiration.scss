@@ -1,6 +1,6 @@
 .page-inspiration {
   .modal-content {
-    width: 100%; 
+    width: 100%;
   }
   .modal-content::before {
     content: '\00D7';
@@ -13,5 +13,8 @@
     img {
       margin-bottom: $grid-gutter-width / 4;
     }
+  }
+  img.moodboard {
+    cursor: pointer;
   }
 }
