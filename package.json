@@ -34,6 +34,7 @@
     "build:css": "node build/sass.js | postcss --local-plugins --use autoprefixer --output dist/bundle.css",
     "build:html": "node build/jade.js",
     "build:js": "browserify -t jadeify pages/main.js -o dist/bundle.js",
+    "build:sitemap": "node build/sitemap.js",
     "minify:js": "uglifyjs dist/bundle.js -o dist/bundle.js",
     "minify:css": "postcss -u cssnano -i dist/bundle.css -o dist/bundle.css",
     "minify:svg": "svgo --disable=cleanupIDs --disable=removeHiddenElems dist/bundle.svg",
