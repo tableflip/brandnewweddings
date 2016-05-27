@@ -3,7 +3,7 @@ var path = require('path')
 var async = require('async')
 var packageJson = require('../package.json')
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
-var outputDir = path.normalize(__dirname)
+var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))
 
 async.waterfall([
   function read (done) {
@@ -13,6 +13,8 @@ async.waterfall([
     var pages = contents.filter(function (item) {
       var pathToFile = path.join(inputDir, item)
       return fs.statSync(pathToFile).isDirectory()
+    }).filter(function (item) {
+      return item !== 'home'
     })
     done(null, pages)
   },
@@ -22,6 +24,6 @@ async.waterfall([
     var writePath = path.join(outputDir, 'sitemap.txt')
     fs.writeFile(writePath, sitemap, done)
   }
-], function (err, result) {
-  return err || console.log('Created sitemap.txt OK')
+], function (err) {
+  return err || console.log('Created dist/sitemap.txt')
 })
