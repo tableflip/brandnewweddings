@@ -7,7 +7,7 @@ block main
     .strip
       .container
         .row
-          img.col-xs-12(src=content._entry.leadImage)
+          img.col-xs-12(src=uc(content._entry.leadImage, '-/format/jpeg/-/resize/2048x/-/quality/lighter/'))
           .col-xs-12.m-t-2.m-b-0
             h1.text-xs-center.text-uppercase=content._entry.couple
             p.lead.text-xs-center.text-uppercase.text-gray.m-b-0=content._entry.description
@@ -44,7 +44,7 @@ block main
             img.img-fluid(src=uc(content._entry.masonryImageBottom, '-/format/jpeg/-/scale_crop/2048x1152/center/-/quality/lighter/'))
     .strip
       .container
-        h2.h1.text-xs-center.text-uppercase.text-primary.m-b-2 - Suppliers -
+        h2.h1.text-xs-center.text-uppercase.text-primary.m-b-2 - Details -
         .row
           .col-sm-10.col-md-8.col-sm-offset-1.col-md-offset-2.text-xs-center
             !=md.render(content._entry.suppliers)

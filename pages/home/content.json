@@ -2,27 +2,37 @@
   "pageTitle": "Homepage",
   "carousel": [
     {
-      "title": "Hot trend 2016 - Water colour",
-      "image": "https://ucarecdn.com/9606c737-59c0-4e3c-8a4a-b0677df1c477/",
-      "link": "https://tableflip.github.io/brandnewweddings/portfolio/amy-and-leos-watercolour-wedding.html"
+      "title": "Jo and Jamie Woodland",
+      "image": "https://ucarecdn.com/d60d9446-14e7-402b-b0f6-1a408af27567/-/crop/2477x1767/102,0/-/preview/",
+      "link": "http://tableflip.github.io/brandnewweddings/portfolio/jo-and-jamie.html"
     },
     {
-      "title": "Hot trend 2016 - Water colour",
-      "image": "https://ucarecdn.com/6164319f-c8ee-4daf-bc0b-316bd0dc7fdf/",
-      "link": "portfolio"
-    },
-    {
-      "title": "Debra&Graham Hero 1",
-      "image": "https://ucarecdn.com/7257131b-c76b-4d9f-bf24-b9e087032900/",
-      "link": "http://www.rentcafe.com/blog/wp-content/uploads/2012/05/pug.jpg"
+      "title": "Amy and Leo Watercolour",
+      "image": "https://ucarecdn.com/a7d3e55a-0e4d-4343-8cd4-b13fb5bc3f09/-/crop/2214x1606/132,75/-/preview/",
+      "link": "http://tableflip.github.io/brandnewweddings/portfolio/amy-and-leo.html"
     },
     {
       "title": "Michaela and Ollie Hero 1",
       "image": "https://ucarecdn.com/e1b01483-1eab-43c3-b44b-4f2fe920631e/-/crop/2651x1808/129,12/-/preview/",
+      "link": "http://tableflip.github.io/brandnewweddings/portfolio/michaela-and-ollie.html"
+    },
+    {
+      "title": "Debra and Graham",
+      "image": "https://ucarecdn.com/2601bf20-ac5b-42ae-9821-3d4217d16fdb/-/crop/2563x1790/108,29/-/preview/",
+      "link": "http://tableflip.github.io/brandnewweddings/portfolio/debra-and-graham.html"
+    },
+    {
+      "title": "Matthew and John",
+      "image": "https://ucarecdn.com/b6356797-8b08-4f09-a4f0-9c48b73f2056/",
       "link": "http://example.com"
+    },
+    {
+      "title": "Lorna and Nathan",
+      "image": "https://ucarecdn.com/5b6bfbc6-978d-4820-99c3-af7b84c7a12f/-/crop/2659x1856/0,0/-/preview/",
+      "link": "http://tableflip.github.io/brandnewweddings/portfolio/lorna-and-nathan.html"
     }
   ],
   "title": "We are here to bring your story to life!",
   "introText": "Award winning creators of bespoke & truly unique wedding stationery.",
-  "aboutText": "<div style=\"font-size: 1rem;\">At <span style=\"color: hotpink\">Br&newweddings</span> we specialise in creating one of a kind stationery for each and every couple. We don’t work from templates which means that your stationery suite will be completely unique and exclusive to you and your day.\n\nEach design you see here has been carefully created for each couple, based on their style, aspirations and ideas, so take a look around and be inspired.\n\nWe look forward to hearing all about your ideas soon!</div>"
+  "aboutText": "<div style=\"font-size: 1rem;\">At Br&newweddings we specialise in creating one of a kind stationery for each and every couple. We don’t work from templates which means that your stationery suite will be completely unique and exclusive to you and your day.\n\nEach design you see here has been carefully created for each couple, based on their style, aspirations and ideas, so take a look around and be inspired.\n\nWe look forward to hearing all about your ideas soon!</div>"
 }
