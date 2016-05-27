@@ -22,11 +22,6 @@
       "link": "http://tableflip.github.io/brandnewweddings/portfolio/debra-and-graham.html"
     },
     {
-      "title": "Matthew and John",
-      "image": "https://ucarecdn.com/b6356797-8b08-4f09-a4f0-9c48b73f2056/",
-      "link": "http://example.com"
-    },
-    {
       "title": "Lorna and Nathan",
       "image": "https://ucarecdn.com/5b6bfbc6-978d-4820-99c3-af7b84c7a12f/-/crop/2659x1856/0,0/-/preview/",
       "link": "http://tableflip.github.io/brandnewweddings/portfolio/lorna-and-nathan.html"
@@ -35,6 +30,11 @@
       "title": "Ashleigh & Jamie",
       "image": "https://ucarecdn.com/ae4ad2ae-fae0-4c60-882b-1105f5528579/-/crop/2513x1760/190,56/-/preview/",
       "link": "http://www.brandnewweddings.co.uk/portfolio/ashleigh-and-jamie.html"
+    },
+    {
+      "title": "Matthew and John",
+      "image": "https://ucarecdn.com/b6356797-8b08-4f09-a4f0-9c48b73f2056/",
+      "link": "http://example.com"
     }
   ],
   "title": "We are here to bring your story to life!",
