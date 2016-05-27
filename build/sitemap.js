@@ -5,25 +5,24 @@ var packageJson = require('../package.json')
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
 var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))
 
+if (!packageJson.config.deploy.prod) throw new Error('Can\'t find packageJson.config.deploy.prod')
+
 async.waterfall([
   function read (done) {
     fs.readdir(inputDir, done)
   },
   function filter (contents, done) {
-    var pages = contents.filter(function (item) {
-      var pathToFile = path.join(inputDir, item)
-      return fs.statSync(pathToFile).isDirectory()
-    }).filter(function (item) {
-      return item !== 'home'
-    })
-    done(null, pages)
+    async.filter(contents, function (item) {
+      return fs.statSync(path.join(inputDir, item)).isDirectory && item !== 'home'
+    }, done)
   },
   function createUrls (pages, done) {
     var routes = pages.map(function (page) { return 'https://' + packageJson.config.deploy.prod + '/' + page })
-    var sitemap = routes.join('\n').toString()
+    var sitemap = routes.join('\n')
     var writePath = path.join(outputDir, 'sitemap.txt')
     fs.writeFile(writePath, sitemap, done)
   }
 ], function (err) {
-  return err || console.log('Created dist/sitemap.txt')
+  if (err) throw err
+  console.log('Created dist/sitemap.txt')
 })
