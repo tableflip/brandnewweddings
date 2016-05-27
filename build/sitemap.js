@@ -12,8 +12,11 @@ async.waterfall([
     fs.readdir(inputDir, done)
   },
   function filter (contents, done) {
-    async.filter(contents, function (item) {
-      return fs.statSync(path.join(inputDir, item)).isDirectory && item !== 'home'
+    async.filter(contents, function (item, callback) {
+      fs.stat(path.join(inputDir, item), function (err, stat) {
+        if (err) return callback(err)
+        callback(null, stat.isDirectory && item !== 'home')
+      })
     }, done)
   },
   function createUrls (pages, done) {
