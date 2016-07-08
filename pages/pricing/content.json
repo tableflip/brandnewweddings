@@ -59,6 +59,12 @@
       "notes": "Range of styles"
     },
     {
+      "name": "New item",
+      "designFee": "£xxx",
+      "printCost": "£xxx",
+      "notes": ""
+    },
+    {
       "name": "Envelope Liners",
       "designFee": "-",
       "printCost": "£75",
