@@ -2,14 +2,14 @@
   "pageTitle": "Homepage",
   "carousel": [
     {
-      "title": "Jo and Jamie Woodland",
-      "image": "https://ucarecdn.com/d60d9446-14e7-402b-b0f6-1a408af27567/-/crop/2477x1767/102,0/-/preview/",
-      "link": "http://tableflip.github.io/brandnewweddings/portfolio/jo-and-jamie.html"
-    },
-    {
       "title": "Katie & Scot",
       "image": "https://ucarecdn.com/892be593-61eb-4ff4-947f-589164dca63c/",
       "link": "http://www.brandnewweddings.co.uk/portfolio/katie-and-scot.html"
+    },
+    {
+      "title": "Jo and Jamie Woodland",
+      "image": "https://ucarecdn.com/d60d9446-14e7-402b-b0f6-1a408af27567/-/crop/2477x1767/102,0/-/preview/",
+      "link": "http://tableflip.github.io/brandnewweddings/portfolio/jo-and-jamie.html"
     },
     {
       "title": "Lorna and Nathan",
