@@ -439,7 +439,7 @@
       "masonryImageLeft": "https://ucarecdn.com/77a8c287-9294-4630-875b-e60bf1b5518f/-/crop/1499x2816/152,0/-/preview/",
       "masonryImageRight": "https://ucarecdn.com/08d2b793-f253-4a1e-ae12-92ffa7b1d00e/-/crop/2441x1735/282,4/-/preview/",
       "masonryImageBottom": "https://ucarecdn.com/56398343-7cb2-46f1-b772-fecbee382f7e/",
-      "featured": false
+      "featured": true
     }
   ]
 }
