@@ -440,6 +440,26 @@
       "masonryImageRight": "https://ucarecdn.com/95d5fd8d-c151-4c01-bec3-b6a6ef7ba8e8/",
       "masonryImageBottom": "https://ucarecdn.com/21a024c6-3e9a-4b9b-8121-0bd9ed890a9d/-/crop/1000x620/0,0/-/preview/",
       "featured": false
+    },
+    {
+      "name": "New Wedding",
+      "description": "",
+      "couple": "",
+      "blurb": "",
+      "quote": "",
+      "quoteFrom": "",
+      "suppliers": "",
+      "previewImage": "http://placehold.it/250x250",
+      "leadImage": "http://placehold.it/500x250",
+      "gridImage1": "http://placehold.it/250x250",
+      "gridImage2": "http://placehold.it/250x250",
+      "gridImage3": "http://placehold.it/250x250",
+      "gridImage4": "http://placehold.it/250x250",
+      "masonryImageTop": "http://placehold.it/500x250",
+      "masonryImageLeft": "http://placehold.it/100x250",
+      "masonryImageRight": "http://placehold.it/400x250",
+      "masonryImageBottom": "http://placehold.it/500x250",
+      "featured": false
     }
   ]
 }
