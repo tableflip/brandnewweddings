@@ -9,7 +9,7 @@ block main
             .text-xs-center
               h1.text-uppercase=content.introTitle
               !=md.render(content.introText)
-            form(action='https://post.tableflip.io/brandnewweddings.co.uk' method='POST')
+            form#contact(action='https://post.tableflip.io/brandnewweddings.co.uk' method='POST')
               .form-group
                 label(for='contact-name').sr-only Name/s (required)
                 input.form-control(id='contact-name' name='name' placeholder='Name/s (required)' required)
@@ -101,7 +101,9 @@ block main
                 label(for='contact-notes').sr-only Additional Notes...
                 textarea.form-control(id='contact-notes' name='notes' placeholder='Additional Notes...' rows=6)
               .form-group.text-xs-center
-                input.btn.btn-primary.btn-lg(type='submit' value='SUBMIT')
+                script.
+                  function onSubmit (token) {document.getElementById('contact').submit()}
+                input.btn.btn-primary.btn-lg.g-recaptcha(type='submit' value='SUBMIT' data-sitekey='6LfP7hwUAAAAABPEv5vLxfvBrAL5J_7eMgjeKcNy' data-callback='onSubmit')
     .strip.sent-true
       .container
         .row
@@ -130,4 +132,3 @@ block main
             .text-xs-center
               h1.text-uppercase=content.contactDetailsTitle
               !=md.render(content.contactDetailsText)
-              
