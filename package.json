@@ -54,7 +54,7 @@
     "find": "^0.2.4",
     "jade": "1.11.0",
     "jadeify": "^4.6.0",
-    "jquery": "^2.2.1",
+    "jquery": "^3.5.0",
     "markdown-it": "^6.0.0",
     "markdown-it-container": "^2.0.0",
     "moment": "^2.12.0",
