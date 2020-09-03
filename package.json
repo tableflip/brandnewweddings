@@ -72,7 +72,7 @@
   "devDependencies": {
     "amdefine": "^1.0.1",
     "browser-sync": "^2.11.1",
-    "node-sass": "^3.13.1",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^1.8.0",
     "pre-commit": "^1.1.2",
     "require-directory": "^2.1.1",
